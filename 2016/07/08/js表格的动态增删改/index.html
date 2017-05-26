@@ -91,7 +91,7 @@
 <meta property="og:url" content="http://inpotato.com/2016/07/08/js表格的动态增删改/index.html">
 <meta property="og:site_name" content="potato&#39;s blog">
 <meta property="og:description" content="最近比较忙，博客搭了一直都没有上传博文，分享一个以前写的一个小例子，用javascript实现简单的增删改查，仅局限于页面上的视觉效果，没有涉及到浏览器缓存及后台数据，下面给出部分关键代码。">
-<meta property="og:updated_time" content="2016-09-10T11:56:23.000Z">
+<meta property="og:updated_time" content="2017-05-26T03:47:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="运用原生js对表格元素进行动态增删改查">
 <meta name="twitter:description" content="最近比较忙，博客搭了一直都没有上传博文，分享一个以前写的一个小例子，用javascript实现简单的增删改查，仅局限于页面上的视觉效果，没有涉及到浏览器缓存及后台数据，下面给出部分关键代码。">
@@ -373,7 +373,6 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Changecourse</span>(<span class="params">rowIndex</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> rowHtml = <span class="built_in">document</span>.getElementById(<span class="string">"mytable"</span>).rows[rowIndex<span class="number">-1</span>];</div><div class="line">    <span class="comment">//table的第rowindex行</span></div><div class="line">    rowHtml.cells[<span class="number">0</span>].innerHTML = <span class="string">"&lt;input type='text' value='"</span>+rowHtml.cells[<span class="number">0</span>].innerText+<span class="string">"' name=''&gt;"</span>;</div><div class="line">    <span class="comment">//rowhtml.cells[n].innertext为修改前的内容</span></div><div class="line">    rowHtml.cells[<span class="number">1</span>].innerHTML = <span class="string">"&lt;input type='text' value='"</span>+rowHtml.cells[<span class="number">1</span>].innerText+<span class="string">"' name=''&gt;"</span>;</div><div class="line">    rowHtml.cells[<span class="number">2</span>].innerHTML = <span class="string">"&lt;input type='text' value='"</span>+rowHtml.cells[<span class="number">2</span>].innerText+<span class="string">"' name=''&gt;"</span>;</div><div class="line">    rowHtml.cells[<span class="number">3</span>].innerHTML = <span class="string">"&lt;input type='text' value='"</span>+rowHtml.cells[<span class="number">3</span>].innerText+<span class="string">"' name=''&gt;"</span>;</div><div class="line">    rowHtml.cells[<span class="number">4</span>].innerHTML = <span class="string">"&lt;input type='text' value='"</span>+rowHtml.cells[<span class="number">4</span>].innerText+<span class="string">"' name=''&gt;"</span>;</div><div class="line">    rowHtml.cells[<span class="number">5</span>].innerHTML = <span class="string">"&lt;input type='text' value='"</span>+rowHtml.cells[<span class="number">5</span>].innerText+<span class="string">"' name=''&gt;"</span>;</div><div class="line">    rowHtml.cells[<span class="number">6</span>].innerHTML = <span class="string">"&lt;a href='#' onclick='Deletecourse(this)'&gt;删除&lt;/a&gt;&lt;a href='#' onclick='save(this.parentNode.parentNode.rowIndex)'&gt;保存&lt;/a&gt;"</span>;</div><div class="line">&#125;<span class="comment">//修改课程</span></div></pre></td></tr></table></figure>
 <p>保存事件:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">save</span>(<span class="params">rowIndex</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> rowHtml = <span class="built_in">document</span>.getElementById(<span class="string">"mytable"</span>).rows[rowIndex<span class="number">-1</span>];</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i&lt;<span class="number">6</span>;i++)&#123;</div><div class="line">    rowHtml.cells[i].innerHTML = rowHtml.cells[i].children[<span class="number">0</span>].value;</div><div class="line">    <span class="comment">//用firstChild.value也行</span></div><div class="line">    &#125;</div><div class="line">    rowHtml.cells[<span class="number">6</span>].innerHTML = <span class="string">"&lt;a href='#' onclick='Changecourse(this.parentNode.parentNode.rowIndex)'&gt;修改&lt;/a&gt;&lt;a href='javascript:;' onclick='Deletecourse(this)'&gt;删除&lt;/a&gt;"</span>;</div><div class="line">&#125;<span class="comment">//保存课程</span></div></pre></td></tr></table></figure>
-<p>以上只给了部分源码，具体文档结构和样式可以自己编写，链上自己的<a href="http://inpotato.com/choose-course-system/right（课程管理）.html">Demo效果</a>，欢迎大家提出宝贵意见。</p>
 
       
     </div>
@@ -404,10 +403,6 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/04/27/计算机网络实验/" rel="next" title="计算机网络实验">
-                <i class="fa fa-chevron-left"></i> 计算机网络实验
-              </a>
             
           </div>
 
