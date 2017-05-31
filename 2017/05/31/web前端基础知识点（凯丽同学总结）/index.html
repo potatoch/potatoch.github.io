@@ -1,0 +1,1575 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="javascript," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="凯丽同学自己总结的web前端基础知识点，一篇很不错的干货。她网站域名到期了，暂时帮她托管">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web前端基础知识点（凯丽同学总结）">
+<meta property="og:url" content="http://inpotato.com/2017/05/31/web前端基础知识点（凯丽同学总结）/index.html">
+<meta property="og:site_name" content="potato&#39;s blog">
+<meta property="og:description" content="凯丽同学自己总结的web前端基础知识点，一篇很不错的干货。她网站域名到期了，暂时帮她托管">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-c6dff4f74e7f2eb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-f47a188d60bd97a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-8e3d9af0d6d264b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-5e416993bde1fdb7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-2d0d78b921025fc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-7c1119be0da3d0f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-2fc97e71155223a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-502ce3aaecc4b38b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-394530a71e54ed9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-e655b83124da94d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-27f724e1cacd45e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-b81be614658808c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-d51bad8105ff7116.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-665a15e11ea92788.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-2e14787d1c2eae05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-f0c90cfaba1aabac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-44303899b95bcf41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-5b833e45a89e197c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-c5addb1b296e74ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2377897-3fdcd14b524df962.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-05-31T07:20:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web前端基础知识点（凯丽同学总结）">
+<meta name="twitter:description" content="凯丽同学自己总结的web前端基础知识点，一篇很不错的干货。她网站域名到期了，暂时帮她托管">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2377897-c6dff4f74e7f2eb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 13988008,
+      author: '博主大人'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://inpotato.com/2017/05/31/web前端基础知识点（凯丽同学总结）/"/>
+
+  <title> web前端基础知识点（凯丽同学总结） | potato's blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?951c4f6056d80a45dc78a4a00bee2e5f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">potato's blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">potato's blog</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                web前端基础知识点（凯丽同学总结）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-31T15:17:33+08:00" content="2017-05-31">
+              2017-05-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/IT/" itemprop="url" rel="index">
+                    <span itemprop="name">IT</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/05/31/web前端基础知识点（凯丽同学总结）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/31/web前端基础知识点（凯丽同学总结）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/05/31/web前端基础知识点（凯丽同学总结）/" class="leancloud_visitors" data-flag-title="web前端基础知识点（凯丽同学总结）">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>凯丽同学自己总结的web前端基础知识点，一篇很不错的干货。她网站域名到期了，暂时帮她托管<br><a id="more"></a></p>
+<h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h2 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h2><p>html 锚点 到底是干吗的？<br>通俗简单地说，比如一篇很长的文章，你想按分段精确来看，那就可以用到锚点了<br>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;#001&quot;&gt;跳到001&lt;/a&gt;</div><div class="line">...文字省略</div><div class="line">&lt;a name=&quot;001&quot; id=&quot;001&quot; &gt;&lt;/a&gt;</div><div class="line">...文字省略</div></pre></td></tr></table></figure></p>
+<p>(兼容到ie8)<br>其实锚点只需name就可以可，加id是为了让它兼容性更好.<br>href的值要跟name \ i d 一致，前面必须加”#”，以上代码在ie6/7,ff中都可以兼容，但在ie8中就不行。<br>因为我们锚点的<a></a>值为空，为不影响美观我们加个空格就行了,</p>
+<p>另一问题，想显示某页面(如：123.html)的某锚点内容呢？ </p>
+<!--more-->
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">代码如下</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">&lt;a href=&quot;123.html#001&quot;&gt;跳到001&lt;/a&gt;</div><div class="line">...文字省略</div><div class="line">&lt;a name=&quot;001&quot; id=&quot;001&quot; &gt; &lt;/a&gt;</div><div class="line">...文字省略</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="html-获取页面，浏览器，屏幕宽高"><a href="#html-获取页面，浏览器，屏幕宽高" class="headerlink" title="html 获取页面，浏览器，屏幕宽高"></a>html 获取页面，浏览器，屏幕宽高</h2><p>一个页面的展示，从外到内的容器为：屏幕-&gt;浏览器-&gt;页面本身。<br>HTML元素展现在页面内-&gt;页面展现在浏览器内-&gt;而浏览器展现在屏幕内。<br>通过Js的一些对象可以获取这些容器的高度、宽度。<br>1：总</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-c6dff4f74e7f2eb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>2:屏幕<br><img src="http://upload-images.jianshu.io/upload_images/2377897-f47a188d60bd97a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"><br>3:浏览器</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-8e3d9af0d6d264b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-5e416993bde1fdb7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>5:可视区<br>定义：可视区域是指能显示网页内容区域的宽高。<br>拉动控制台的时候网页可视区域的宽高也会随之改变。<br>可视区宽高跟内容宽高没关系。</p>
+<p>如果内容超过可视区域的高度或者宽度就出现滚动条。要获取可视区域的宽高每个浏览器的获取方法不一样</p>
+<p><a href="http://www.cnblogs.com/polk6/p/5051935.html" target="_blank" rel="external">参照</a></p>
+<hr>
+<h2 id="Doctype"><a href="#Doctype" class="headerlink" title="Doctype"></a>Doctype</h2><p>1.Doctype作用<br>位置：&lt;!DOCTYPE&gt;声明位于html第一行<br>作用： 告知浏览器用什么标准解析html文档<br>            &lt;!DOCTYPE&gt;不存在，或者格式不正确，会导致文档以兼容模 (怪异模式)式出现</p>
+<p>语法：<br>      HTML 顶级元素 可用性 “注册//组织//类型 标签//定义 语言””URL”<br>&lt;!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.0//EN”&gt;<br>&lt;!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.0 Strict//EN”&gt;</p>
+<p>其中，DTD的是W3C所发布的一个文档类型定义，简单的说，就是告诉浏览器你的这个HTML，是根据那个标准写的，解析的时候用哪个标准解析。</p>
+<p><a href="http://www.qdfuns.com/notes/21146/12ba5b538dd5974b1bee88f77c71b0a0.html" target="_blank" rel="external">http://www.qdfuns.com/notes/21146/12ba5b538dd5974b1bee88f77c71b0a0.html</a></p>
+<hr>
+<p>##为什么HTML5就只要写&lt;!DOCTYPE HTML&gt;?<br>HTML 4.01 中的 doctype 需要对 DTD 进行引用，因为 HTML 4.01 基于 SGML。 HTML 5 不基于 SGML，因此不需要对 DTD 进行引用，但是需要 doctype 来规范浏览器的行为。<br>其中，SGML是标准通用标记语言,简单的说，就是比HTML,XML更老的标准，这两者都是由SGML发展而来的。BUT，HTML5不是的。</p>
+<hr>
+<h2 id="标准模式与兼容模式（怪异模式）各有什么区别"><a href="#标准模式与兼容模式（怪异模式）各有什么区别" class="headerlink" title="标准模式与兼容模式（怪异模式）各有什么区别?"></a>标准模式与兼容模式（怪异模式）各有什么区别?</h2><p>A：在标准模式中，浏览器根据规范呈现页面；在混杂模式中，页面以一种比较宽松向后兼容的方式显示。简单的说，就是尽可能的显示能显示的东西给用户看。（但是会有些样式失效）</p>
+<p>1：width不同<br>在严格模式中 ：width是内容宽度 ，元素真正的宽度 = width+（padding+border+margin）2<br>在兼容模式中 ：width则是元素的实际宽度 ，内容宽度 = width - ( padding2+border2)</p>
+<p>2.兼容模式下可设置百分比的高度和行内元素的高宽<br>    在Standards模式下，给span等行内元素设置wdith和height都不会生效，而在兼容模式下，则会生效。<br>    在standards模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置高度，子元素设置一个百分比的高度是无效的。</p>
+<p>3.用margin:0 auto设置水平居中在IE下会失效<br>    使用margin:0 auto在standards模式下可以使元素水平居中，但在兼容模式下却会失效（用text-align属性解决）<br>    body{text-align:center};#content{text-align:left}</p>
+<p>4.兼容模式下Table中的字体属性不能继承上层的设置，white-space:pre会失效，设置图片的padding会失效</p>
+<hr>
+<h2 id="行内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><a href="#行内元素有哪些？块级元素有哪些？-空-void-元素有那些？" class="headerlink" title="行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？"></a>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h2><p> 首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">（1）行内元素有：a b span img input select strong（强调的语气）</div><div class="line">（2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</div><div class="line">（3）常见的空元素：&lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;</div><div class="line">      鲜为人知的是：</div><div class="line">	&lt;area&gt; &lt;base&gt; &lt;col&gt; &lt;command&gt; &lt;embed&gt; &lt;keygen&gt; &lt;param&gt; &lt;source&gt; &lt;track&gt; &lt;wbr&gt;</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="页面导入样式时，使用link和-import有什么区别？"><a href="#页面导入样式时，使用link和-import有什么区别？" class="headerlink" title="页面导入样式时，使用link和@import有什么区别？"></a>页面导入样式时，使用link和@import有什么区别？</h2><p>1 : 属于<br>link属于xml 标签，除了加载css以外，还能定义rss和rel等 。@import是css提供的，只能用于加载css<br>2 :页面加载<br>页面在加载时候，link同时被加载；而@import引用的css等页面加载完毕再加载<br>3：兼容性<br>@import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;</p>
+<p>（4）link方式的样式权重高于@import的权重。<br>（5）使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。</p>
+<hr>
+<h2 id="介绍一下你对浏览器内核的理解？"><a href="#介绍一下你对浏览器内核的理解？" class="headerlink" title="介绍一下你对浏览器内核的理解？"></a>介绍一下你对浏览器内核的理解？</h2><p>主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。<br>  渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。</p>
+<p>JS引擎则：解析和执行javascript来实现网页的动态效果。</p>
+<hr>
+<p>常见的浏览器内核有哪些？<br> Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>  Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等<br>  Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为：Blink;]<br>  Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]</p>
+<hr>
+<h2 id="HTML、XML、XHTML-有什么区别？"><a href="#HTML、XML、XHTML-有什么区别？" class="headerlink" title="HTML、XML、XHTML 有什么区别？"></a>HTML、XML、XHTML 有什么区别？</h2><p>HTML是被设计用来显示数据的，重点是:显示数据以及如何显示数据更好上面。<br>XML是被设计用来描述数据的，重点是:什么是数据，如何存放数据。<br>XHTML基于HTML的基础上进行了扩展和规范，让XHTML更加严格，主要目的是促进HTML向XML过渡。</p>
+<p>HTML的弊端：<br>编码不规范，结构混乱臃肿，需要智能的终端才能很好的显示；<br>表现和结构混乱，不利于开发和维护；<br>不能使用于更多的网络设备中，比如手机；<br>为了让HTML逐渐过渡到XML阶段，w3c又定制了XHTML标准。</p>
+<p>而XML的弊端也不少：<br>在数据中寻找信息非常难<br>大数据量效率低<br>使用XML传输数据时没有数据库系统那样的信息管理功能<br>因此XML因为自身严苛限制等因素逐渐被HTML5取代。</p>
+<hr>
+<h2 id="怎样理解-HTML-语义化？"><a href="#怎样理解-HTML-语义化？" class="headerlink" title="怎样理解 HTML 语义化？"></a>怎样理解 HTML 语义化？</h2><p>HTML语义化能提高网页语义的清晰度，方便爬虫工具识别网站内容，爬虫工具在识别网站内容时不会受到网站样式的影响，只会关注网站内容本身<br>HTML的语义化能够提高团队对网站的维护和改进效率<br>改善网页的可访问性，遇到视觉障碍用户时屏幕阅读器能够更好的系别网页内容</p>
+<hr>
+<h2 id="怎样理解内容与样式分离的原则"><a href="#怎样理解内容与样式分离的原则" class="headerlink" title="怎样理解内容与样式分离的原则"></a>怎样理解内容与样式分离的原则</h2><p>在 Web 开发中，所谓内容与样式分离，就是让内容的归 HTML, 样式归 CSS, 不要混着用。<br>样式单独抽离出来,代码会得到精简和重用，后期的维护会变得非常简单。我只用写一个 class 的样式，就可以同时更改多个有相同 class 的元素的样式；只用一个 css 文件，就可以同时链接到多个 HTML 页面上。</p>
+<hr>
+<h2 id="title与h1的区别、b与strong的区别、i与em的区别？"><a href="#title与h1的区别、b与strong的区别、i与em的区别？" class="headerlink" title="title与h1的区别、b与strong的区别、i与em的区别？"></a>title与h1的区别、b与strong的区别、i与em的区别？</h2><p> title属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取也有很大的影响；</p>
+<p>  strong是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：<strong>会重读，而<b>是展示强调内容。</b></strong></p>
+<p>  i内容展示为斜体，em表示强调的文本；</p>
+<p>  Physical Style Elements – 自然样式标签<br>  b, i, u, s, pre<br>  Semantic Style Elements – 语义样式标签<br>  strong, em, ins, del, code<br>  应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。</p>
+<hr>
+<h2 id="页面可见性（Page-Visibility-API）-可以有哪些用途？"><a href="#页面可见性（Page-Visibility-API）-可以有哪些用途？" class="headerlink" title="页面可见性（Page Visibility API） 可以有哪些用途？"></a>页面可见性（Page Visibility API） 可以有哪些用途？</h2><p>  通过 visibilityState 的值检测页面当前是否可见，以及打开网页的时间等;<br>  在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放；</p>
+<hr>
+<h2 id="iframe有那些缺点？"><a href="#iframe有那些缺点？" class="headerlink" title="iframe有那些缺点？"></a>iframe有那些缺点？</h2><ul>
+<li>iframe会阻塞主页面的Onload事件；</li>
+<li><p>搜索引擎的检索程序无法解读这种页面，不利于SEO;</p>
+</li>
+<li><p>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。</p>
+<p>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>动态给iframe添加src属性值，这样可以绕开以上两个问题。</p>
+</li>
+</ul>
+<hr>
+<h2 id="Label的作用是什么？是怎么用的？"><a href="#Label的作用是什么？是怎么用的？" class="headerlink" title="Label的作用是什么？是怎么用的？"></a>Label的作用是什么？是怎么用的？</h2><p>label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。</p>
+<p>  <label for="Name">Number:</label><br>  <input type="“text“name="Name"" id="Name"></p>
+<p>  <label>Date:<input type="text" name="B"></label></p>
+<hr>
+<h2 id="meta？"><a href="#meta？" class="headerlink" title="meta？"></a>meta？</h2><p>&lt; meta &gt; 元素</p>
+<blockquote>
+<p>标签提供关于HTML文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。它可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 web 服务。 —— <a href="http://www.w3school.com.cn/" target="_blank" rel="external">W3School</a></p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-2d0d78b921025fc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-7c1119be0da3d0f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p><a href="http://www.jianshu.com/p/8c3dbfc02fdb" target="_blank" rel="external">http://www.jianshu.com/p/8c3dbfc02fdb</a><br><a href="http://www.xuanfengge.com/html-meta-used-in-sorting.html" target="_blank" rel="external">http://www.xuanfengge.com/html-meta-used-in-sorting.html</a></p>
+<hr>
+<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h2 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h2><p>1:标签语义化，比如header，footer，nav，aside，article，section等，新增了很多表单元素，入email，url等，除去了center等样式标签，还有除去了有性能问题的frame，frameset等标签</p>
+<p>2、音视频元素，video，audio的增加使得我们不需要在依赖外部的插件就可以往网页中加入音视频元素。</p>
+<p>3、新增很多api，比如获取用户地理位置的window.navigator.geoloaction</p>
+<p>4、websocket<br>websocket是伴随html5到来的基于tcp/ip的全双工通信的协议。<br>主要通信过程：先借http完成握手，达到了长连接<br>第一步：浏览器基于tcp，发送http请求<br>第二步：服务器端，接收到请求后。将 tcp用户网络层协议变为websocket协议，完成了握手<br>第三步：服务器端和浏览器完成握手，他们之间形成一条通道，可以源源不断的传送信息<br>websocket是一种协议，可以让我们建立客户端到服务器端的全双工通信，这就意味着服务器端可以主动推送数据到客户端。</p>
+<hr>
+<p>5、HTML5 能够本地存储数据，在之前都是使用 cookies 使用的。<br>HTML5 提供了下面本地存储方案：webstorage包括localeStorage和sessionStorage，localeStorage是持久化存储在客户端，只要用户不主动删除，就不会消失，sessionStorage也是存储在客户端，但是他的存在时间是一个回话，一旦浏览器的关于该回话的页面关闭了，sessionStorage就消失了，</p>
+<hr>
+<p>6：请描述一下 cookies，sessionStorage 和 localStorage 的区别？</p>
+<p>  cookie是网站为了标示用户身份而储存在客户端上的数据（通常经过加密）。<br>  cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。<br>  sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</p>
+<p>  存储大小：<br>      cookie数据大小不能超过4k。<br>      sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</p>
+<p>  有期时间：<br>      localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；<br>      sessionStorage  数据在当前浏览器窗口关闭后自动删除。<br>      cookie  在过期时间之前一直有效，即使窗口或浏览器关闭</p>
+<hr>
+<p>7、应用程序缓存：<br>在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。<br>  原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。</p>
+<p>html5允许我们自己控制哪些文件需要缓存，哪些不需要，具体的做法如下：</p>
+<p>1、首先给html添加manifest属性，并赋值为cache.manifest<br>2、cache.manifest的内容为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">  CACHE MANIFEST</div><div class="line">  #v1.2</div><div class="line">  CACHE :           //表示需要缓存的文件</div><div class="line">    a.js</div><div class="line">    b.js</div><div class="line">NETWORK:    //表示只在用户在线的时候才需要的文件，不会缓存</div><div class="line">  c.js</div><div class="line">FALLBACK</div><div class="line">/        /index.html     //表示如果找不到第一个资源就用第二个资源代替</div></pre></td></tr></table></figure></p>
+<hr>
+<p>7、web worker，web worker是运行在浏览器后台的js程序，他不影响主程序的运行，是另开的一个js线程，可以用这个线程执行复杂的数据操作，然后把操作结果通过postMessage传递给主线程，这样在进行复杂且耗时的操作时就不会阻塞主线程了。</p>
+<hr>
+<h2 id="对html5的语义话的理解"><a href="#对html5的语义话的理解" class="headerlink" title="对html5的语义话的理解"></a>对html5的语义话的理解</h2><p>html5的语义化指的是用正确的标签包含正确的内容，比如nav标签，里面就应该包含导航条的内容，而不是用做其他的用途，标签语义化的好处就是结构良好，便于阅读，方便威化，也有利于爬虫的查找，提高搜索率。</p>
+<hr>
+<h2 id="如何实现浏览器内多个标签页之间的通信-阿里"><a href="#如何实现浏览器内多个标签页之间的通信-阿里" class="headerlink" title="如何实现浏览器内多个标签页之间的通信? (阿里)"></a>如何实现浏览器内多个标签页之间的通信? (阿里)</h2><p>WebSocket、SharedWorker；<br>  也可以调用localstorge、cookies等本地存储方式；<br>  localstorge另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，<br>  我们通过监听事件，控制它的值来进行页面信息通信；<br>  注意quirks：Safari 在无痕模式下设置localstorge值时会抛出 QuotaExceededError 的异常；</p>
+<hr>
+<h2 id="HTML5-能够本地存储数据webstorage"><a href="#HTML5-能够本地存储数据webstorage" class="headerlink" title="HTML5 能够本地存储数据webstorage"></a>HTML5 能够本地存储数据webstorage</h2><p>HTML5 能够本地存储数据，在之前都是使用 cookies 使用的。<br>HTML5 提供了下面本地存储方案：webstorage包括localeStorage和sessionStorage，localeStorage是持久化存储在客户端，只要用户不主动删除，就不会消失，sessionStorage也是存储在客户端，但是他的存在时间是一个回话，一旦浏览器的关于该回话的页面关闭了，sessionStorage就消失了，</p>
+<h2 id="请描述一下-cookies，sessionStorage-和-localStorage-的区别？"><a href="#请描述一下-cookies，sessionStorage-和-localStorage-的区别？" class="headerlink" title="请描述一下 cookies，sessionStorage 和 localStorage 的区别？"></a>请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h2><p>  cookie是网站为了标示用户身份而储存在客户端上的数据（通常经过加密）。<br>  cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。<br>  sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</p>
+<p>  存储大小：<br>      cookie数据大小不能超过4k。<br>      sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</p>
+<p>  有期时间：<br>      localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；<br>      sessionStorage  数据在当前浏览器窗口关闭后自动删除。<br>      cookie  在过期时间之前一直有效，即使窗口或浏览器关闭</p>
+<hr>
+<h2 id="应用程序缓存-离线缓存-："><a href="#应用程序缓存-离线缓存-：" class="headerlink" title="应用程序缓存(离线缓存)："></a>应用程序缓存(离线缓存)：</h2><p>在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。<br>  原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。</p>
+<p>html5允许我们自己控制哪些文件需要缓存，哪些不需要，具体的做法如下：</p>
+<p>1、首先给html添加manifest属性，并赋值为cache.manifest<br>2、cache.manifest的内容为:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">  CACHE MANIFEST</div><div class="line">  #v1.2</div><div class="line">  CACHE :           //表示需要缓存的文件</div><div class="line">    a.js</div><div class="line">    b.js</div><div class="line">NETWORK:    //表示只在用户在线的时候才需要的文件，不会缓存</div><div class="line">  c.js</div><div class="line">FALLBACK</div><div class="line">/        /index.html     //表示如果找不到第一个资源就用第二个资源代替</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h2><p>websocket是伴随html5到来的基于tcp/ip的全双工通信的协议。<br>主要通信过程：先借http完成握手，达到了长连接<br>第一步：浏览器基于tcp，发送http请求<br>第二步：服务器端，接收到请求后。将 tcp用户网络层协议变为websocket协议，完成了握手<br>第三步：服务器端和浏览器完成握手，他们之间形成一条通道，可以源源不断的传送信息<br>websocket是一种协议，可以让我们建立客户端到服务器端的全双工通信，这就意味着服务器端可以主动推送数据到客户端。</p>
+<hr>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><p>新特性<em><br> 响应式布局</em><br> 媒体查询具体到语句_<br> 动画<br>css3新增的选择器</p>
+<hr>
+<h2 id="介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？"><a href="#介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？" class="headerlink" title="介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？"></a>介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</h2><p>每个HTML元素都是长方形盒子。<br>  （1）有两种， IE 盒子模型、W3C 盒子模型；<br>  （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；<br>  （3）区  别： IE的content部分把 border 和 padding计算了进去;<br><img src="http://upload-images.jianshu.io/upload_images/2377897-2fc97e71155223a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-502ce3aaecc4b38b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<hr>
+<h2 id="CSS选择符有哪些？哪些属性可以继承？"><a href="#CSS选择符有哪些？哪些属性可以继承？" class="headerlink" title="CSS选择符有哪些？哪些属性可以继承？"></a>CSS选择符有哪些？哪些属性可以继承？</h2><ul>
+<li><p>1.id选择器（ # myid）<br> 2.类选择器（.myclassname）<br> 3.标签选择器（div, h1, p）<br> 4.相邻选择器（h1 + p）<br> 5.子选择器（ul &gt; li）<br> 6.后代选择器（li a）<br> 7.通配符选择器（ * ）<br> 8.属性选择器（a[rel = “external”]）<br> 9.伪类选择器（a:hover, li:nth-child）</p>
+<ul>
+<li><p>可继承的样式： font-size font-family color, UL LI DL DD DT;</p>
+</li>
+<li><p>不可继承的样式：border padding margin width height ;</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="CSS优先级算法如何计算？"><a href="#CSS优先级算法如何计算？" class="headerlink" title="CSS优先级算法如何计算？"></a>CSS优先级算法如何计算？</h2><ul>
+<li>优先级就近原则，同权重情况下样式定义最近者为准;</li>
+<li><p>载入样式以最后载入的定位为准;</p>
+<p>优先级为:<br>同权重: 内联样式表（标签内部）&gt; 嵌入样式表（当前文件中）&gt; 外部样式表（外部文件中）。<br>!important &gt;  id &gt; class &gt; tag<br>important 比 内联优先级高<br>!important 为优先权</p>
+</li>
+</ul>
+<hr>
+<h2 id="伪类-伪元素"><a href="#伪类-伪元素" class="headerlink" title="伪类 伪元素"></a>伪类 伪元素</h2><p>伪类是给元素模拟添加类 ，来实现某种效果（：）<br>常见伪类：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-394530a71e54ed9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>伪元素是模拟添加个元素来实现效果（::）(css3出现后做的区分)<br>常见伪元素：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-e655b83124da94d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p><a href="http://web.jobbole.com/86181/" target="_blank" rel="external">http://web.jobbole.com/86181/</a></p>
+<hr>
+<h2 id="CSS3新增伪类有那些？"><a href="#CSS3新增伪类有那些？" class="headerlink" title="CSS3新增伪类有那些？"></a>CSS3新增伪类有那些？</h2><pre><code>举例：
+  p:first-of-type    选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。
+  p:last-of-type    选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。
+  p:only-of-type    选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。
+  p:only-child        选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。
+  p:nth-child(2)    选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。
+
+ inptut
+    :enabled          
+   :disabled         控制表单控件的禁用状态。
+  :checked        单选框或复选框被选中。
+</code></pre><hr>
+<h2 id="请解释一下为什么需要清除浮动？清除浮动的方式"><a href="#请解释一下为什么需要清除浮动？清除浮动的方式" class="headerlink" title="请解释一下为什么需要清除浮动？清除浮动的方式"></a>请解释一下为什么需要清除浮动？清除浮动的方式</h2><p>清除浮动是为了清除使用浮动元素产生的影响。浮动的元素，高度会塌陷，而高度的塌陷使我们页面后面的布局不能正常显示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">1、父级div定义height；</div><div class="line"> 2、父级div 也一起浮动；</div><div class="line"> 3、常规的使用一个class；</div><div class="line"> 	.clearfix:before, .clearfix:after &#123;</div><div class="line"> 	    content: &quot; &quot;;</div><div class="line"> 	    display: table;</div><div class="line"> 	&#125;</div><div class="line"> 	.clearfix:after &#123;</div><div class="line"> 	    clear: both;</div><div class="line"> 	&#125;</div><div class="line"> 	.clearfix &#123;</div><div class="line"> 	    *zoom: 1;</div><div class="line"> 	&#125;</div></pre></td></tr></table></figure></p>
+<p>清除浮动方式：<br>  1) display:block 使生成的元素以块级元素显示,占满剩余空间;<br>  2) height:0 避免生成内容破坏原有布局的高度。<br>  3) visibility:hidden 使生成的内容不可见，并允许可能被生成内容盖住的内容可以进行点击和交互;<br>  4）通过 content:”.”生成内容作为最后一个元素，至于content里面是点还是其他都是可以的，例如oocss里面就有经典的 content:”.”,有些版本可能content 里面内容为空,一丝冰凉是不推荐这样做的,firefox直到7.0 content:”” 仍然会产生额外的空隙；<br>  5）zoom：1 触发IE hasLayout。</p>
+<p>  通过分析发现，除了clear：both用来闭合浮动的，<br>其他代码无非都是为了隐藏掉content生成的内容，这也就是其他版本的闭合浮动为什么会有font-size：0，line-height：0。</p>
+<hr>
+<h2 id="为什么要初始化CSS样式。"><a href="#为什么要初始化CSS样式。" class="headerlink" title="为什么要初始化CSS样式。"></a>为什么要初始化CSS样式。</h2><ul>
+<li><p>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。</p>
+<ul>
+<li>当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。<br>淘宝的样式初始化代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td &#123; margin:0; padding:0; &#125;</div><div class="line">body, button, input, select, textarea &#123; font:12px/1.5tahoma, arial, \5b8b\4f53; &#125;</div><div class="line">h1, h2, h3, h4, h5, h6&#123; font-size:100%; &#125;</div><div class="line">address, cite, dfn, em, var &#123; font-style:normal; &#125;</div><div class="line">code, kbd, pre, samp &#123; font-family:couriernew, courier, monospace; &#125;</div><div class="line">small&#123; font-size:12px; &#125;</div><div class="line">ul, ol &#123; list-style:none; &#125;</div><div class="line">a &#123; text-decoration:none; &#125;</div><div class="line">a:hover &#123; text-decoration:underline; &#125;</div><div class="line">sup &#123; vertical-align:text-top; &#125;</div><div class="line">sub&#123; vertical-align:text-bottom; &#125;</div><div class="line">legend &#123; color:#000; &#125;</div><div class="line">fieldset, img &#123; border:0; &#125;</div><div class="line">button, input, select, textarea &#123; font-size:100%; &#125;</div><div class="line">table &#123; border-collapse:collapse; border-spacing:0; &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="用纯CSS创建一个三角形的原理是什么？"><a href="#用纯CSS创建一个三角形的原理是什么？" class="headerlink" title="用纯CSS创建一个三角形的原理是什么？"></a>用纯CSS创建一个三角形的原理是什么？</h2><p> 把上、左、右三条边隐藏掉（颜色设为 transparent）</p>
+<blockquote>
+<p> #demo {<br>    width: 0;<br>    height: 0;<br>    border-width: 20px;<br>    border-style: solid;<br>    border-color: transparent transparent red transparent;<br>  }</p>
+<hr>
+<h2 id="经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧-？"><a href="#经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧-？" class="headerlink" title="经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？"></a>经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</h2><ul>
+<li>png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</p>
+</li>
+<li><p>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。</p>
+<p>浮动ie产生的双倍距离 #box{ float:left; width:10px; margin:0 0 0 100px;}</p>
+<p>这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入 ——<em>display:inline;将其转化为行内属性。(</em>这个符号只有ie6会识别)</p>
+<p>渐进识别的方式，从总体中逐渐排除局部。</p>
+<p>首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。<br>接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。</p>
+<p>css</p>
+<pre><code>.bb{
+    background-color:red;/*所有识别*/
+    background-color:#00deff\9; /*IE6、7、8识别*/
+    +background-color:#a200ff;/*IE6、7识别*/
+    _background-color:#1e0bd1;/*IE6识别*/
+}
+</code></pre></li>
+</ul>
+<ul>
+<li><p>IE下,可以使用获取常规属性的方法来获取自定义属性,<br>也可以使用getAttribute()获取自定义属性;<br>Firefox下,只能使用getAttribute()获取自定义属性。<br>解决方法:统一通过getAttribute()获取自定义属性。</p>
+</li>
+<li><p>IE下,even对象有x,y属性,但是没有pageX,pageY属性;<br>Firefox下,event对象有pageX,pageY属性,但是没有x,y属性。</p>
+</li>
+<li><p>解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数。</p>
+</li>
+<li><p>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,<br>可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。</p>
+<p>超链接访问过后hover样式就不出现了 被点击访问过的超链接样式不在具有hover和active了解决方法是改变CSS属性的排列顺序:<br>L-V-H-A :  a:link {} a:visited {} a:hover {} a:active {}</p>
+</li>
+</ul>
+<hr>
+<h2 id="什么是外边距合并？"><a href="#什么是外边距合并？" class="headerlink" title="什么是外边距合并？"></a>什么是外边距合并？</h2><p>外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。<br>  合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。<br>  w3school介绍网址： <a href="http://www.w3school.com.cn/css/css_margin_collapsing.asp" target="_blank" rel="external">http://www.w3school.com.cn/css/css_margin_collapsing.asp</a></p>
+<hr>
+<h2 id="zoom-1的清除浮动原理"><a href="#zoom-1的清除浮动原理" class="headerlink" title="zoom:1的清除浮动原理?"></a>zoom:1的清除浮动原理?</h2><p>清除浮动，触发hasLayout；<br>  Zoom属性是IE浏览器的专有属性，它可以设置或检索对象的缩放比例。解决ie下比较奇葩的bug。<br>  譬如外边距（margin）的重叠，浮动清除，触发ie的haslayout属性等。</p>
+<p>  来龙去脉大概如下：<br>  当设置了zoom的值之后，所设置的元素就会就会扩大或者缩小，高度宽度就会重新计算了，这里一旦改变zoom值时其实也会发生重新渲染，运用这个原理，也就解决了ie下子元素浮动时候父元素不随着自动扩大的问题。</p>
+<p>  Zoom属是IE浏览器的专有属性，火狐和老版本的webkit核心的浏览器都不支持这个属性。然而，zoom现在已经被逐步标准化，出现在 CSS 3.0 规范草案中。</p>
+<p>  目前非ie由于不支持这个属性，它们又是通过什么属性来实现元素的缩放呢？<br>  可以通过css3里面的动画属性scale进行缩放。 </p>
+<hr>
+<h2 id="如何居中div？"><a href="#如何居中div？" class="headerlink" title="如何居中div？"></a>如何居中div？</h2><p>水平居中：给div设置一个宽度，然后添加margin:0 auto属性</p>
+<p> div{<br>     width:200px;<br>     margin:0 auto;<br>  }<br>让绝对定位的div居中</p>
+<p> div {<br>     position: absolute;<br>     width: 300px;<br>     height: 300px;<br>     margin: auto;<br>     top: 0;<br>     left: 0;<br>     bottom: 0;<br>     right: 0;<br>     background-color: pink;    /<em> 方便看效果 </em>/<br> }<br>水平垂直居中一</p>
+<p> 确定容器的宽高 宽500 高 300 的层<br> 设置层的外边距</p>
+<p> div {<br>     position: relative;        /<em> 相对定位或绝对定位均可 </em>/<br>     width:500px;<br>     height:300px;<br>     top: 50%;<br>     left: 50%;<br>     margin: -150px 0 0 -250px;         /<em> 外边距为自身宽高的一半 </em>/<br>     background-color: pink;         /<em> 方便看效果 </em>/</p>
+<p>  }<br>水平垂直居中二</p>
+<p> 未知容器的宽高，利用 <code>transform</code> 属性</p>
+<p> div {<br>     position: absolute;        /<em> 相对定位或绝对定位均可 </em>/<br>     width:500px;<br>     height:300px;<br>     top: 50%;<br>     left: 50%;<br>     transform: translate(-50%, -50%);<br>     background-color: pink;         /<em> 方便看效果 </em>/</p>
+<p> }<br>水平垂直居中三</p>
+<p> 利用 flex 布局<br> 实际使用时应考虑兼容性</p>
+<p> .container {<br>     display: flex;<br>     align-items: center;         /<em> 垂直居中 </em>/<br>     justify-content: center;    /<em> 水平居中 </em>/</p>
+<p> }<br> .container div {<br>     width: 100px;<br>     height: 100px;<br>     background-color: pink;        /<em> 方便看效果 </em>/<br> }  </p>
+<hr>
+<h2 id="position的值relative和absolute定位原点是？"><a href="#position的值relative和absolute定位原点是？" class="headerlink" title="position的值relative和absolute定位原点是？"></a>position的值relative和absolute定位原点是？</h2><pre><code>absolute
+  生成绝对定位的元素，相对于值不为 static的第一个父元素进行定位。
+fixed （老IE不支持）
+  生成绝对定位的元素，相对于浏览器窗口进行定位。
+relative
+  生成相对定位的元素，相对于其正常位置进行定位。
+static
+  默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）。
+inherit
+  规定从父元素继承 position 属性的值。
+</code></pre><hr>
+<h1 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h1><p>  响应式布局<br>css3新增的选择器<br>伪类选择器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">p:first-of-type	选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</div><div class="line">p:last-of-type	选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</div><div class="line">p:only-of-type	选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</div><div class="line">p:only-child		选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。</div><div class="line">p:nth-child(2)	选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。</div></pre></td></tr></table></figure></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-27f724e1cacd45e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<hr>
+<h2 id="css-新增属性5个"><a href="#css-新增属性5个" class="headerlink" title="css 新增属性5个"></a>css 新增属性5个</h2><p>CSS3有哪些新内容，请至少说出5个。</p>
+<p>   1）border-radius。CSS3圆角表格</p>
+<p>   2）font-effect。以往对网页上的文字加特效只能用filter属性，但是在CSS3中专门制定了一个加文字特效的属性，而且不止加阴影这种效果。</p>
+<p>   3）text-underline-style，text-underline-color，text-underline-mode，text-underline-position。丰富了对链接下划线的样式，以往的下划线都是直线，这次可不一样了，有波浪线、点线、虚线等等，更可对下划线的颜色和<br>位置进行任意改变，哈哈~~下划线的世界从此不再单一。（还有对应顶线和中横线的样式，效果与下划线类似）</p>
+<p>   4）font-emphasize-style和font-emphasize-position。我们在做笔记时经常要在文字下点几个点或打个圈什么的，以示重点，CSS3也开始加入了这项功能，这应该在某些特定网页上很有用。</p>
+<p>   5）Font-face可以用来加载字体样式，而且它还能够加载服务器端的字体文件，显示客户端没有安装的字体。</p>
+<hr>
+<h2 id="请解释一下CSS3的Flexbox（弹性盒布局模型）-以及适用场景？"><a href="#请解释一下CSS3的Flexbox（弹性盒布局模型）-以及适用场景？" class="headerlink" title="请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？"></a>请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</h2><p> 一个用于页面布局的全新CSS3功能，Flexbox可以把列表放在同一个方向（从上到下排列，从左到右），并让列表能延伸到占用可用的空间。<br>   较为复杂的布局还可以通过嵌套一个伸缩容器（flex container）来实现。<br>   采用Flex布局的元素，称为Flex容器（flex container），简称”容器”。<br>   它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称”项目”。<br>   常规布局是基于块和内联流方向，而Flex布局是基于flex-flow流可以很方便的用来做局中，能对不同屏幕大小自适应。<br>   在布局上有了比以前更加灵活的空间<br><a href="http://www.w3cplus.com/css3/flexbox-basics.html" target="_blank" rel="external">http://www.w3cplus.com/css3/flexbox-basics.html</a></p>
+<hr>
+<h2 id="CSS3-的-Transitions-Transforms-和-Animation"><a href="#CSS3-的-Transitions-Transforms-和-Animation" class="headerlink" title="CSS3 的 Transitions, Transforms 和 Animation"></a>CSS3 的 Transitions, Transforms 和 Animation</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">.skew &#123; </div><div class="line"> -webkit-transform: skew(50deg); </div><div class="line"> &#125; </div><div class="line"></div><div class="line"> .scale &#123; </div><div class="line"> -webkit-transform: scale(2, 0.5); </div><div class="line"> &#125; </div><div class="line"></div><div class="line"> .rotate &#123; </div><div class="line"> -webkit-transform: rotate(30deg); </div><div class="line"> &#125; </div><div class="line"></div><div class="line"> .translate &#123; </div><div class="line"> -webkit-transform: translate(50px, 50px); </div><div class="line"> &#125; </div><div class="line"></div><div class="line"> .all_in_one_transform &#123; </div><div class="line"> -webkit-transform: skew(20deg) scale(1.1, 1.1) rotate(40deg) translate(10px, 15px); </div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h2><p>作用：媒体查询可以让我们根据设备显示器的特性（如视口宽度、屏幕比例、设备方向：横向或纵向）为其设定CSS样式，检测的媒体特性有 width 、 height 和 color （等）。</p>
+<p>怎样使用media?</p>
+<p>第一步：<br> 首先需要在html文档中添加以下代码，用来兼容移动设备的显示效果</p>
+<p>&lt;meta name=”viewport content=”width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no”/&gt;</p>
+<p>ps:</p>
+<blockquote>
+<p>width=device-width:宽度等于当前设备的宽度<br>initial-scale=1：初始的缩放比例（默认为1）<br>maximum-scale=1：允许用户缩放到得最大比例（默认为1）<br>user-scalable=no：用户不能手动缩放</p>
+</blockquote>
+<p>第二步：怎样在CSS文件中写CSS响应式媒体查询<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">@media screen and (max-width:720px) and (min-width:320px)&#123;</div><div class="line"></div><div class="line">      body&#123;</div><div class="line"></div><div class="line">       background-color:red;</div><div class="line"></div><div class="line">       &#125;</div><div class="line"></div><div class="line">@media screen and (max-width:320px)&#123;</div><div class="line"></div><div class="line">      body&#123;</div><div class="line"></div><div class="line">         background-color:blue;</div><div class="line"></div><div class="line">       &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h1 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h1><p>内存泄露</p>
+<p>eval</p>
+<hr>
+<h2 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h2><p>1:jsonp跨域<br>JSONP（JSON with Padding）是资料格式 JSON 的一种“使用模式”，可以让网页从别的网域要资料<br>因为通过script标签引入的js是不受同源策略的限制的。所以我们可以通过script标签引入一个js或者是一个其他后缀形式（如php，jsp等）的文件，此文件返回一个js函数的调用。 比如，有个a.html页面，它里面的代码需要利用ajax获取一个不同域上的json数据，假设这个json数据地址是<a href="http://damonare.cn/data.php" target="_blank" rel="external">http://damonare.cn/data.php</a>, 那么a.html中的代码就可以这样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    function dosomething(jsondata)&#123;</div><div class="line">        //处理获得的json数据</div><div class="line">    &#125;</div><div class="line">&lt;\/script&gt;</div><div class="line">//因为是markdown写的，所以页面显示内容可能有部分差异</div><div class="line">&lt;script src=\&quot;http://example.com/data.php?callback=dosomething&quot;&gt;&lt;\/script&gt;</div></pre></td></tr></table></figure></p>
+<p>2:通过修改document.domain来跨子域<br>仅在相同主域下才有效，且window.domain需要设置为相同的父域 不同的框架之间是可以获取window对象的，但却无法获取相应的属性和方法。<br>比如，有一个页面，它的地址是<a href="http://www.example.com/a.html" target="_blank" rel="external">http://www.example.com/a.html</a> ，<br>在这个页面里面有一个iframe，它的src是<a href="http://example.com/b.html" target="_blank" rel="external">http://example.com/b.html</a>,<br>很显然，这个页面与它里面的iframe框架是不同域的，所以我们是无法通过在页面中书写js代码来获取iframe中的东西的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    function test()&#123;</div><div class="line">        var iframe = document.getElementById(&apos;iframe&apos;);</div><div class="line">        var win = document.contentWindow;//可以获取到iframe里的window对象，但该window对象的属性和方法几乎是不可用的</div><div class="line">        var doc = win.document;//这里获取不到iframe里的document对象</div><div class="line">        var name = win.name;//这里同样获取不到window对象的name属性</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;iframe id = &quot;iframe&quot; src=&quot;http://example.com/b.html&quot; onload = &quot;test()&quot;&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-b81be614658808c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"><br>3:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-d51bad8105ff7116.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"><br>4：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-665a15e11ea92788.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"><br>5：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-2e14787d1c2eae05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<hr>
+<h2 id="Ajax实现流程"><a href="#Ajax实现流程" class="headerlink" title="Ajax实现流程"></a>Ajax实现流程</h2><p>创建一个XMLHttpRequest()实例<br>准备一个Ajax请求以待发送<br>发送Ajax请求<br>根据服务器响应的结果，将相应数据填充到xhr对象的属性中 注意url是相对于执行代码的当前页面，也可以是绝对路径。</p>
+<p>var xhr = new XMLHttpRequest();<br>xhr.open(Type,URL,Boolean);<br>//请求类型，请求地址，是否异步<br>xhr.send(null);<br>xhr.onreadystatechange = function(){<br>    if(xhr.readyState == 4){<br>        if(xhr.status &gt;= 200 &amp;&amp; xhr.status &lt; 300 || xhr.status == 304){<br>            alert(xhr.responseText);<br>        }else {<br>            alert(‘unsuccessful ‘ + xhr.status);<br>        }<br>    }<br>};</p>
+<hr>
+<h2 id="单线程"><a href="#单线程" class="headerlink" title="单线程"></a>单线程</h2><p>为什么javascrip是单线程<br>JavaScript的单线程，与它的用途有关。作为浏览器脚本语言，JavaScript的主要用途是与用户互动，以及操作DOM。这决定了它只能是单线程，否则会带来很复杂的同步问题。<br>浏览器端多线程<br>js<br>css<br>事件<br>数据交互</p>
+<hr>
+<h2 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h2><p>垃圾收集器必须跟踪哪个变量有用哪个变量没用，对于不再有用的变量打上标记，以备将来收回其占用的内存，内存泄露和浏览器实现的垃圾回收机制息息相关， 而浏览器实现标识无用变量的策略主要有下两个方法：<br>第一，引用计数法<br>跟踪记录每个值被引用的次数。当声明一个变量并将引用类型的值赋给该变量时，则这个值的引用次数就是1。如果同一个值又被赋给另一个变量，则该值的引用次 数加1.相反，如果包含对这个值引用的变量又取得另外一个值，则这个值的引用次数减1.当这个值的引用次数变成0时，则说明没有办法访问这个值了，因此就 可以将其占用的内存空间回收回来。</p>
+<p>如： var a = {};     //对象{}的引用计数为1<br>     b = a;          //对象{}的引用计数为 1+1<br>     a = null;       //对象{}的引用计数为2-1<br>所以这时对象{}不会被回收;<br>IE 6, 7 对DOM对象进行引用计数回收， 这样简单的垃圾回收机制，非常容易出现循环引用问题导致内存不能被回收， 进行导致内存泄露等问题，一般不用引用计数法。<br>第二，标记清除法<br>到2008年为止，IE,Firefox,Opera,Chrome和Safari的javascript实现使用的都是标记清除式的垃圾收集策略（或类似的策略），只不过垃圾收集的时间间隔互有不同。<br>标记清除的算法分为两个阶段，标记(mark)和清除(sweep). 第一阶段从引用根节点开始标记所有被引用的对象，第二阶段遍历整个堆，把未标记的对象清除。</p>
+<hr>
+<h2 id="JavaScript的数据类型"><a href="#JavaScript的数据类型" class="headerlink" title="JavaScript的数据类型"></a>JavaScript的数据类型</h2><p>基本数据类型：Number，String，Boolean，Undefined，Null<br>复杂数据类型：Object，Array，Function，RegExp，Date，Error<br>全局数据类型：Math</p>
+<hr>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p><a href="http://www.cnblogs.com/humin/p/4556820.html" target="_blank" rel="external">参照</a><br><a href="https://www.zhihu.com/search?type=content&amp;q=js+%E7%BB%A7%E6%89%BF" target="_blank" rel="external">知乎</a></p>
+<ul>
+<li>1 原型链继承()<br>  Child.prototype = new Parent(‘father’);<br>  可复用，子类型无法给超类型传递参数</li>
+<li>2 类继承<br> Parent.call(this, parentName);<br>  this.name = name;<br>相当于 Parent 这个函数在 Child 函数中执行了一遍，并且将所有与 this 绑定的变量都切换到了 Child 上</li>
+<li>3 组合式继承<br>组合式继承是比较常用的一种继承方法，其背后的思路是使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。<br>这样，既通过在原型上定义方法实现了函数复用，又保证每个实例都有它自己的属性。<br>组合式继承是 JS 最常用的继承模式，但组合继承使用过程中会被调用两次：一次是创建子类型的时候，另一次是在子类型构造函数的内部。</li>
+<li>4 寄生组合继承</li>
+<li>5 ES 6 继承：</li>
+</ul>
+<hr>
+<h2 id="javascript创建对象的几种方式？"><a href="#javascript创建对象的几种方式？" class="headerlink" title="javascript创建对象的几种方式？"></a>javascript创建对象的几种方式？</h2><p> javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。</p>
+<p> 1、对象字面量的方式</p>
+<pre><code>person={firstname:&quot;Mark&quot;,lastname:&quot;Yun&quot;,age:25,eyecolor:&quot;black&quot;};
+</code></pre><p> 2、用function来模拟无参的构造函数</p>
+<pre><code>function Person(){}
+var person=new Person();//定义一个function，如果使用new&quot;实例化&quot;,该function可以看作是一个Class
+person.name=&quot;Mark&quot;;
+person.age=&quot;25&quot;;
+person.work=function(){
+alert(person.name+&quot; hello...&quot;);
+}
+person.work();
+</code></pre><p> 3、用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）</p>
+<pre><code>function Pet(name,age,hobby){
+   this.name=name;//this作用域：当前对象
+   this.age=age;
+   this.hobby=hobby;
+   this.eat=function(){
+      alert(&quot;我叫&quot;+this.name+&quot;,我喜欢&quot;+this.hobby+&quot;,是个程序员&quot;);
+   }
+}
+var maidou =new Pet(&quot;麦兜&quot;,25,&quot;coding&quot;);//实例化、创建对象
+maidou.eat();//调用eat方法
+</code></pre><p> 4、用工厂方式来创建（内置对象）</p>
+<pre><code>var wcDog =new Object();
+wcDog.name=&quot;旺财&quot;;
+wcDog.age=3;
+wcDog.work=function(){
+  alert(&quot;我是&quot;+wcDog.name+&quot;,汪汪汪......&quot;);
+}
+wcDog.work();
+</code></pre><p> 5、用原型方式来创建</p>
+<pre><code>function Dog(){
+
+ }
+ Dog.prototype.name=&quot;旺财&quot;;
+ Dog.prototype.eat=function(){
+ alert(this.name+&quot;是个吃货&quot;);
+ }
+ var wangcai =new Dog();
+ wangcai.eat();
+</code></pre><p> 5、用混合方式来创建</p>
+<pre><code>function Car(name,price){
+  this.name=name;
+  this.price=price;
+}
+ Car.prototype.sell=function(){
+   alert(&quot;我是&quot;+this.name+&quot;，我现在卖&quot;+this.price+&quot;万元&quot;);
+  }
+var camry =new Car(&quot;凯美瑞&quot;,27);
+camry.sell();
+</code></pre><hr>
+<h2 id="JavaScript有几种类型的值？，你能画一下他们的内存图吗？"><a href="#JavaScript有几种类型的值？，你能画一下他们的内存图吗？" class="headerlink" title="JavaScript有几种类型的值？，你能画一下他们的内存图吗？"></a>JavaScript有几种类型的值？，你能画一下他们的内存图吗？</h2><p> 栈：原始数据类型（Undefined，Null，Boolean，Number、String）<br> 堆：引用数据类型（对象、数组和函数）</p>
+<p> 两种类型的区别是：存储位置不同；<br> 原始数据类型直接存储在栈(stack)中的简单数据段，占据空间小、大小固定，属于被频繁使用数据，所以放入栈中存储；<br> 引用数据类型存储在堆(heap)中的对象,占据空间大、大小不固定。如果存储在栈中，将会影响程序运行的性能；引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其在栈中的地址，取得地址后从堆中获得实体</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-f0c90cfaba1aabac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<hr>
+<h2 id="说几条写JavaScript的基本规范？"><a href="#说几条写JavaScript的基本规范？" class="headerlink" title="说几条写JavaScript的基本规范？"></a>说几条写JavaScript的基本规范？</h2><p> 1.不要在同一行声明多个变量。<br> 2.请使用 ===/!==来比较true/false或者数值<br> 3.使用对象字面量替代new Array这种形式<br> 4.不要使用全局函数。<br> 5.Switch语句必须带有default分支<br> 6.函数不应该有时候有返回值，有时候没有返回值。<br> 7.For循环必须使用大括号<br> 8.If语句必须使用大括号<br> 9.for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。</p>
+<hr>
+<h2 id="封装cookie的添加，删除，查询方法"><a href="#封装cookie的添加，删除，查询方法" class="headerlink" title="封装cookie的添加，删除，查询方法"></a>封装cookie的添加，删除，查询方法</h2><p>cookie是存储在浏览器端的，可以用于存储sessionID，也可以用于自动登陆，记住密码等，但是在浏览器端并没有官方的操作cookie的方法，下面我们来封装一下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">CookieUtil=｛</div><div class="line">    addCookie:function(key,value,options)&#123;</div><div class="line">        var str=key+&quot;=&quot;+escape(value);</div><div class="line">        if(options.expires)&#123;</div><div class="line">           var curr=new Date();   //options.expires的单位是小时</div><div class="line">           curr.setTime(curr.getTime()+options.expires*3600*1000);</div><div class="line">           options.expires=curr.toGMTString();</div><div class="line">        &#125;</div><div class="line">        for(var k in options)&#123;   //有可能指定了cookie的path，cookie的domain</div><div class="line">           str+=&quot;;&quot;+k+&quot;=&quot;+options[k];</div><div class="line">        &#125;</div><div class="line">        document.cookie=str;</div><div class="line">    &#125;,</div><div class="line">    queryCookie:function(key)&#123;</div><div class="line">      var cookies=document.cookie;</div><div class="line">     //获得浏览器端存储的cookie,格式是key=value;key=value;key=value</div><div class="line">      cookies+=&quot;;&quot;;</div><div class="line">      var start=cookies.indexOf(key);</div><div class="line">      if(start&lt;=-1)&#123; return null; &#125;  //说明不存在该cookie</div><div class="line">      var end=cookies.indexOf(&quot;;&quot;,start);</div><div class="line">      var value=cookies.slice(start+key.length+1,end);</div><div class="line">      return unescape(value);</div><div class="line">    &#125;,</div><div class="line">    deleteCookie:function(key)&#123;</div><div class="line">      var value=CookieUtil.queryCookie(key);</div><div class="line">      if(value===null)&#123;return false;&#125;</div><div class="line">      CookieUtil.addCookie(key,value,&#123;expires:0&#125;);//把过期时间设置为0，浏览器会马上自动帮我们删除cookie</div><div class="line">    &#125;</div><div class="line">｝</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>同源策略是浏览器有一个很重要的概念。所谓同源是指，域名，协议，端口相同。不同源的客户端脚本(javascript、ActionScript)在没明确授权的情况下，不能读写对方的资源。简单的来说，浏览器允许包含在页面A的脚本访问第二个页面B的数据资源，这一切是建立在A和B页面是同源的基础上。</p>
+<hr>
+<h2 id="介绍js有哪些内置对象？"><a href="#介绍js有哪些内置对象？" class="headerlink" title="介绍js有哪些内置对象？"></a>介绍js有哪些内置对象？</h2><p> Object 是 JavaScript 中所有对象的父对象<br> 数据封装类对象：Object、Array、Boolean、Number 和 String<br> 其他对象：Function、Arguments、Math、Date、RegExp、Error</p>
+<hr>
+<h2 id="原型和原型链（-prototype-proto）"><a href="#原型和原型链（-prototype-proto）" class="headerlink" title="原型和原型链（ prototype, proto）"></a>原型和原型链（ prototype, <em>proto</em>）</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>一切引用类型（数组，函数，Object,null,new Number（）等）都是对象，对象是属性的集合<br>一般对象通过函数来创建（new Object()，new Array();），但是函数还是一个对象。–鸡生蛋蛋生鸡</p>
+<h3 id="1，原型"><a href="#1，原型" class="headerlink" title="1，原型"></a>1，原型</h3><p><a href="http://www.cnblogs.com/wangfupeng1988/p/3978131.html" target="_blank" rel="external">参照</a></p>
+<h4 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h4><p>每一个函数都有一个默认的属性是prototype，这个prototype属性值是一个对象。他里面有好多属性集合。所以可以函数的Prototype中增加自己的属性</p>
+<h4 id="proto"><a href="#proto" class="headerlink" title="proto"></a><em>proto</em></h4><p>每一个对象都有一个隐藏属性<em>proto</em>（可称之为为隐式原型），指向创建该对象的函数的prototype。<br>obj.proto = Object.prototype;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-44303899b95bcf41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-5b833e45a89e197c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h4 id="2，原型-链"><a href="#2，原型-链" class="headerlink" title="2，原型 链"></a>2，原型 链</h4><p>访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着<strong>proto</strong>这条链向上找，这就是原型链。<br>补充：直到Object.protype.proto = null; ，这就是出口</p>
+<h4 id="3，-instanceOf"><a href="#3，-instanceOf" class="headerlink" title="3， instanceOf"></a>3， instanceOf</h4><p>判断 引用类型和父子关系<br>A instanceof B;<br>A.proto = B prototype;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-c5addb1b296e74ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<hr>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><h3 id="闭包的定义？"><a href="#闭包的定义？" class="headerlink" title="闭包的定义？"></a>闭包的定义？</h3><p>创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的参数变量。</p>
+<h2 id="闭包缺点"><a href="#闭包缺点" class="headerlink" title="闭包缺点"></a>闭包缺点</h2><p>因为内部函数可以访问外部函数的变量，所以外部函数的变量不能被释放，如果闭包嵌套过多，会导致内存占用大，要合理使用闭包。</p>
+<h2 id="闭包与隔离作用域"><a href="#闭包与隔离作用域" class="headerlink" title="闭包与隔离作用域"></a>闭包与隔离作用域</h2><p>当闭包和立即函数结合使用的时候可以隔离作用域<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">for(var i=0;i&lt;2;i++)&#123;</div><div class="line">      (function(i)&#123;</div><div class="line">             setTimeout(function()&#123;</div><div class="line">              console.log(i);</div><div class="line">        &#125;,0)</div><div class="line">    &#125;)(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="作用域与作用域链-？"><a href="#作用域与作用域链-？" class="headerlink" title="作用域与作用域链 ？"></a>作用域与作用域链 ？</h2><p>0：函数作用域<br>1：作用域<br>2：作用域链<br>3：with语句主要用来临时扩展作用域链，将语句中的对象添加到作用域的头部。</p>
+<p>而Javascript压根没有块级作用域，而是有函数作用域.<br>作用域指的是变量的作用范围。<br>内部作用域由函数的参数，局部变量，函数构成。内部作用域和外部的作用域一层层的链接起来形成作用域链。<br>当在函数内部要访问一个变量的时候，首先查找自己的内部作用域有没有这个变量，如果没有就到这个函数所在的外层作用域中找，直到到window所在的作用域。<br>每个函数在声明的时候就默认有一个外部作用域的存在了，比如：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var t=4;</div><div class="line">function foo()&#123;</div><div class="line">       var tem=12;</div><div class="line">      funciton bar()&#123;</div><div class="line">       var temo=34;</div><div class="line">       console.log(t+&quot; &quot;+tem+&quot; &quot;+temo);</div><div class="line">      &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>bar（）的外部作用域是foo()作用域。foo()的外部作用域是window</p>
+<hr>
+<h2 id="this指向"><a href="#this指向" class="headerlink" title="this指向"></a>this指向</h2><blockquote>
+<p>在javascript当中每一个function都是一个对象，所以在这个里var temp=this 指的是function当前的对象。this是Javascript语言的一个关键字。它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。</p>
+</blockquote>
+<p>一共有四种指向：</p>
+<ul>
+<li>函数有所属对象时：指向所属对象</li>
+<li>没调用对象就指向全局对象</li>
+<li>构造函数中的 this：指向新对象</li>
+<li>通过 apply 或 call 或 bind 来改变 this 的所指。</li>
+</ul>
+<h3 id="函数有所属对象时：指向所属对象"><a href="#函数有所属对象时：指向所属对象" class="headerlink" title="函数有所属对象时：指向所属对象"></a>函数有所属对象时：指向所属对象</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var myObject = &#123;value: 100&#125;;</div><div class="line">myObject.getValue = function () &#123;</div><div class="line"> console.log(this.value); // 输出 100</div><div class="line"> </div><div class="line"> // 输出 &#123; value: 100, getValue: [Function] &#125;，</div><div class="line"> // 其实就是 myObject 对象本身</div><div class="line"> console.log(this);</div><div class="line"> </div><div class="line"> return this.value;</div><div class="line">&#125;;</div><div class="line"> </div><div class="line">console.log(myObject.getValue()); // =&gt; 100</div></pre></td></tr></table></figure>
+<h3 id="没调用对象就指向全局对象"><a href="#没调用对象就指向全局对象" class="headerlink" title="没调用对象就指向全局对象"></a>没调用对象就指向全局对象</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var myObject = &#123;value: 100&#125;;</div><div class="line">myObject.getValue = function () &#123;</div><div class="line"> var foo = function () &#123;</div><div class="line">  console.log(this.value) // =&gt; undefined</div><div class="line">  console.log(this);// 输出全局对象 global</div><div class="line"> &#125;;</div><div class="line"> foo(); </div><div class="line"> return this.value;</div><div class="line">&#125;;</div><div class="line">console.log(myObject.getValue()); // =&gt; 100</div></pre></td></tr></table></figure>
+<h4 id="构造器中的-this：指向新对象"><a href="#构造器中的-this：指向新对象" class="headerlink" title="构造器中的 this：指向新对象"></a>构造器中的 this：指向新对象</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var SomeClass = function()&#123;</div><div class="line"> this.value = 100;</div><div class="line">&#125;</div><div class="line">var myCreate = new SomeClass();</div><div class="line">console.log(myCreate.value); // 输出100</div></pre></td></tr></table></figure>
+<h3 id="apply-和-call-调用以及-bind-绑定：指向绑定的对象"><a href="#apply-和-call-调用以及-bind-绑定：指向绑定的对象" class="headerlink" title="apply 和 call 调用以及 bind 绑定：指向绑定的对象"></a>apply 和 call 调用以及 bind 绑定：指向绑定的对象</h3><p>call和apply，假设要改变fn函数内部的this的指向，指向obj，那么可以fn.call(obj);或者fn.apply(obj);<br>call和apply的区别是什么<br>其是call和apply的区别在于参数，他们两个的第一个参数都是一样的，表示调用该函数的对象，apply的第二个参数是数组，是[arg1,arg2,arg3]这种形式，而call是arg1,arg2,arg3这样的形式。<br>还有一个bind函数，var bar=fn.bind(obj);那么fn中的this就指向obj对象了，bind函数返回新的函数，这个函数内(bar)的this指针指向obj对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var myObject = &#123;value: 100&#125;;</div><div class="line">var foo = function()&#123;</div><div class="line"> console.log(this);</div><div class="line">&#125;;</div><div class="line">foo(); // 全局变量 global</div><div class="line">foo.apply(myObject); // &#123; value: 100 &#125;</div><div class="line">foo.call(myObject); // &#123; value: 100 &#125;</div><div class="line">var newFoo = foo.bind(myObject);</div><div class="line">newFoo(); // &#123; value: 100 &#125;</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="事件模型"><a href="#事件模型" class="headerlink" title="事件模型"></a>事件模型</h2><ul>
+<li>原始事件模型</li>
+<li>捕获型事件模型</li>
+<li>冒泡事件模型</li>
+</ul>
+<p>DOM0:<br>原始事件模型就是btn.onclick=function(){}这种类型的事件模型（btn.onclick = null;）<br>基于DOM0的事件，对于同一个dom节点而言，只能注册一个，  取后面事件。后边注册的同种事件会覆盖之前注册的。</p>
+<p>DOM2</p>
+<ul>
+<li>DOM2支持同一dom元素注册多个同种事件。</li>
+<li><p>DOM2新增了捕获和冒泡的概念。</p>
+<p>DOM2事件通过addEventListener和removeEventListener管理，当然，这是标准。<br>  但IE8及其以下版本浏览器，自娱自乐，搞出了对应的attachEvent和detachEvent。<br>是通过addEventListener绑定的事件, 还有IE下的DOM2事件通过attachEvent绑定;<br>addEventListener当然就是注册事件，她有三个参数，分别为：”事件名称”, “事件回调”, “捕获/冒泡”。举个例子：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var btn = document.getElementById(&quot;test&quot;);</div><div class="line">btn.addEventListener(&quot;click&quot;, function(e)&#123;</div><div class="line">  alert(&quot;ok&quot;);</div><div class="line">&#125;, false);</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/2377897-3fdcd14b524df962.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>1：<br>冒泡事件模型是指事件从事件的发生地（目标元素），一直向上传递，直到window，<br>捕获型则恰好相反，事件是从window向下传递，直到事件的发生地（目标元素）<br>2：<br>同一个节点元素，给她添加捕获和冒泡事件模型，捕获比冒泡快 .<br>3：<br>比如说一下子注册了3个冒泡事件，那么执行顺序就按照注册的顺序来，先注册先执行。<br>4:<br>假如说外层div和内层div同时注册了捕获事件，那么点击内层div时，外层div的事件一定是先触发.<br>假如外层div和内层div都是注册的冒泡事件，点击内层div时，一定是内层div事件先执行，原理相同。<br>5:<br>事件触发时，会默认传入一个event对象，前边提过了，这个event对象上有一个方法：stopPropagation，通过此方法，可以阻止冒泡，这样外层div就接收不到事件了。</p>
+<hr>
+<p>IE是只支持冒泡事件模型的，下面是兼容各个浏览器的事件监听代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">EventUtil=&#123;</div><div class="line">  addListener:function(target,type,handler)&#123;</div><div class="line">    if(target.addEventListener)&#123;</div><div class="line">        target.addEventListener(type,handler);</div><div class="line">    &#125;else if(target.attachEvent)&#123;</div><div class="line">        target.attach(&quot;on&quot;+type,function()&#123;</div><div class="line">              handler.call(target);  //让handler中的this指向目标元素</div><div class="line">        &#125;);</div><div class="line">    &#125;else&#123;</div><div class="line">        target[&quot;on&quot;+type]=handler;</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line"> removeListener:function(target,type,handler)&#123;   </div><div class="line">      if(target.removeEventListener)&#123;    </div><div class="line">        target.removeEventListener(type,handler);          </div><div class="line">     &#125;else if(target.detachEvent)&#123;</div><div class="line">        target.detachEvent(&quot;on&quot;+type,handler);</div><div class="line">     &#125;else&#123;</div><div class="line">        target[&quot;on&quot;+type]=null;</div><div class="line">     &#125;</div><div class="line">  &#125;,</div><div class="line"> getEvent:function(e)&#123;      //获取事件对象</div><div class="line">     var evt=window.event||e;</div><div class="line">     return evt;</div><div class="line"> &#125;,</div><div class="line"> getTarget:function(e)&#123;      //获得目标对象</div><div class="line">     var evt=EventUtil.getEvent(e);</div><div class="line">     var target;</div><div class="line">     if(evt.target)&#123; target=evt.target;&#125;</div><div class="line">     else &#123;target=evt.srcElement;&#125;</div><div class="line">     return target;</div><div class="line"> &#125;,</div><div class="line"> stopPropagation:function(e)&#123;  //停止冒泡</div><div class="line">     var evt=EventUtil.getEvent(e);</div><div class="line">     if(evt.stopPropagation) &#123;evt.stopPropagation();&#125;</div><div class="line">     else &#123;evt.cancelBubble=true;&#125;</div><div class="line"> &#125;,</div><div class="line"> preventDefault:function(e)&#123;   //阻值默认行为的发生</div><div class="line">     var evt=EventUtil.getEvent(e);</div><div class="line">     if(evt.preventDefault)&#123; evt.preventDefault(); &#125;</div><div class="line">     else &#123;e.returnValue=false;&#125;</div><div class="line"> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h2><p>应用场景：动态添加 或删除孩子的时候<br>含义：孩子的事委托父亲做<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;ul id=&quot;ul1&quot;&gt;</div><div class="line">    &lt;li&gt;111&lt;/li&gt;</div><div class="line">    &lt;li&gt;222&lt;/li&gt;</div><div class="line">    &lt;li&gt;333&lt;/li&gt;</div><div class="line">    &lt;li&gt;444&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div><div class="line"></div><div class="line">window.onload = function()&#123;</div><div class="line">    var oUl = document.getElementById(&quot;ul1&quot;);</div><div class="line">   oUl.onclick = function()&#123;</div><div class="line">        alert(123);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这里用父级ul做事件处理，当li被点击时，由于冒泡原理，事件就会冒泡到ul上，因为ul上有点击事件，所以事件就会触发.<br>当然，这里当点击ul的时候，也是会触发的，那么问题就来了，如果我想让事件代理的效果跟直接给节点的事件效果一样怎么办，比如说只有点击li才会触发，不怕，我们有绝招：<br>Event对象提供了一个属性叫target，可以返回事件的目标节点，我们成为事件源，也就是说，target就可以表示为当前的事件操作的dom，但是不是真正操作dom，当然，这个是有兼容性的，标准浏览器用ev.target，IE浏览器用event.srcElement。<br>这里我们用nodeName来获取具体是什么标签名，这个返回的是一个大写的，我们需要转成小写再做比较（习惯问题）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">window.onload = function()&#123;</div><div class="line">　　var oUl = document.getElementById(&quot;ul1&quot;);</div><div class="line">　　oUl.onclick = function(ev)&#123;</div><div class="line">　　　　var ev = ev || window.event;</div><div class="line">　　　　var target = ev.target || ev.srcElement;</div><div class="line">　　　　if(target.nodeName.toLowerCase() == &apos;li&apos;)&#123;</div><div class="line">　 　　　　　　	alert(123);</div><div class="line">　　　　　　　  alert(target.innerHTML);</div><div class="line">　　　　&#125;</div><div class="line">　　&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a href="http://www.cnblogs.com/liugang-vip/p/5616484.html" target="_blank" rel="external">参考</a></p>
+<hr>
+<h1 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h1><h2 id="AMD与CMD"><a href="#AMD与CMD" class="headerlink" title="AMD与CMD"></a>AMD与CMD</h2><p>AMD 和 CMD</p>
+<p>AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。 CMD 是 SeaJS 在推广过程中对模块定义的规范化产出，类似的还有 CommonJS Modules/2.0 规范。 区别： AMD是提前执行，CMD是延迟执行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//CMD</div><div class="line">define(function(require, exports, module)&#123;</div><div class="line">    var a = require(&apos;./a&apos;)</div><div class="line">    a.doSomething();</div><div class="line">    //</div><div class="line">    // 省略100行</div><div class="line">    var b = require(&apos;./b&apos;)</div><div class="line">    b.doSomething()</div><div class="line">    &#125;)</div><div class="line"></div><div class="line">// CMD 依赖一开始就需要写好</div><div class="line">define([&apos;./a&apos;, &apos;./b&apos;], function(a, b)&#123;</div><div class="line">    a.doSomething()</div><div class="line">    // 此处省略100行</div><div class="line">    b.doSomething()</div><div class="line">    &#125;)</div></pre></td></tr></table></figure></p>
+<p>CMD是服务端模块的规范，一个单独的文件就是一个模块。每个模块都是一个单独的作用域。CommonJS规范规定，每个模块内部，module变量代表当前模块。这个变量是一个对象，它的exports属性（即module.exports）是对外的接口。加载某个模块，其实是加载该模块的module.exports属性。<br>所有代码都运行在模块作用域，不会污染全局作用域。<br>模块可以多次加载，但是只会在第一次加载时运行一次，然后运行结果就被缓存了，以后再加载，就直接读取缓存结果。要想让模块再次运行，必须清除缓存。<br>模块加载的顺序，按照其在代码中出现的顺序。<br>AMD是异步加载模块。由于Node.js主要用于服务器编程，模块文件一般都已经存在于本地硬盘，所以加载起来比较快。不用考虑异步方式。但是浏览器端就比较适合AMD规范。</p>
+<hr>
+<h1 id="Node-amp-Express"><a href="#Node-amp-Express" class="headerlink" title="Node&amp;Express"></a>Node&amp;Express</h1><ul>
+<li>基于node的其他web开发框架</li>
+<li>node 有关的知识点</li>
+</ul>
+<hr>
+<h2 id="对Node的优点和缺点提出了自己的看法？"><a href="#对Node的优点和缺点提出了自己的看法？" class="headerlink" title="对Node的优点和缺点提出了自己的看法？"></a>对Node的优点和缺点提出了自己的看法？</h2><p>  *（优点）因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求，<br>    因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。<br>    此外，与Node代理服务器交互的客户端代码是由javascript语言编写的，<br>    因此客户端和服务器端都用同一种语言编写，这是非常美妙的事情。</p>
+<p>  *（缺点）Node是一个相对新的开源项目，所以不太稳定，它总是一直在变，<br>    而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。</p>
+<hr>
+<h2 id="express"><a href="#express" class="headerlink" title="express"></a>express</h2><p>Express 是一个基于 Node的极简灵活的web 应用开发框架。Express是在Node之上扩展了 Web 应用所需的基本功能。<br>Express完全是由中间件构成一个的 web 开发框架：从本质上来说，一个 Express 应用就是在调用各种中间件。</p>
+<h3 id="中间件含义"><a href="#中间件含义" class="headerlink" title="中间件含义"></a>中间件含义</h3><p>是一个函数或功能，（err,res,rep,next），是封装在程序中处理请求的功能。后台的请求分为一部分一部分，每一部分都有中间件来完成,之道响应完毕</p>
+<h3 id="Express-几种中间件："><a href="#Express-几种中间件：" class="headerlink" title="Express 几种中间件："></a>Express 几种中间件：</h3><p>应用级中间件<br>绑定到app 对象使用 app.use()和 app.METHOD()， 其中， METHOD 是需要处理的 HTTP 请求的方法，例如 GET, PUT, POST 等等</p>
+<p>路由级中间件<br>绑定的对象为 express.Router()。路由级使用 router.use() 加载</p>
+<p>错误处理中间件<br>4 个参数，而不是 3 个，其签名如下： (err, req, res, next)。</p>
+<p>内置的中间件<br>express.static是 Express 唯一内置的中间件。负责在 Express 应用中托管静态资源。</p>
+<p>第三方中间件<br>例如 cookie-parser</p>
+<hr>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p> 跨域<br>输入url 经历了什么<br>http连接啥的<br>状态码<br>渲染页面</p>
+<hr>
+<h2 id="httphttps"><a href="#httphttps" class="headerlink" title="httphttps"></a>httphttps</h2><p><a href="http://www.alloyteam.com/2016/07/httphttp2-0spdyhttps-reading-this-is-enough/" target="_blank" rel="external">http://www.alloyteam.com/2016/07/httphttp2-0spdyhttps-reading-this-is-enough/</a></p>
+<hr>
+<h2 id="一个页面从输入-URL-到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）"><a href="#一个页面从输入-URL-到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）" class="headerlink" title="一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）"></a>一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）</h2><p> 详细版：<br>      1、浏览器会开启一个线程来处理这个请求，对 URL 分析判断如果是 http 协议就按照 Web 方式来处理;<br>      2、调用浏览器内核中的对应方法，比如 WebView 中的 loadUrl 方法;<br>      3、通过DNS解析获取网址的IP地址，设置 UA 等信息发出第二个GET请求;<br>      4、进行HTTP协议会话，客户端发送报头(请求报头);<br>      5、进入到web服务器上的 Web Server，如 Apache、Tomcat、Node.JS 等服务器;<br>      6、进入部署好的后端应用，如 PHP、Java、JavaScript、Python 等，找到对应的请求处理;<br>      7、处理结束回馈报头，此处如果浏览器访问过，缓存上有对应资源，会与服务器最后修改时间对比，一致则返回304;<br>      8、浏览器开始下载html文档(响应报头，状态码200)，同时使用缓存;<br>      9、文档树建立，根据标记请求所需指定MIME类型的文件（比如css、js）,同时设置了cookie;<br>      10、页面开始渲染DOM，JS根据DOM API操作DOM,执行事件绑定等，页面显示完成。</p>
+<pre><code>简洁版：
+  浏览器根据请求的URL交给DNS域名解析，找到真实IP，向服务器发起请求；
+  服务器交给后台处理完成后返回数据，浏览器接收文件（HTML、JS、CSS、图象等）；
+  浏览器对加载到的资源（HTML、JS、CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）；
+  载入解析到的资源文件，渲染页面，完成。
+</code></pre><hr>
+<h2 id="页面渲染流程主要分三部分"><a href="#页面渲染流程主要分三部分" class="headerlink" title="页面渲染流程主要分三部分"></a>页面渲染流程主要分三部分</h2><p>HTML文档解析生成DOM树<br>DOM树构建完到Webkit绘制上下文<br>上下文到最终生成的图像 (JavaScript省略为JS)<br>当用户输入URL时候，WebKit调用其资源加载器加载该URL对应的网页。<br>加载器依赖网络模块建立连接，发送请求并接受答复。<br>WebKit收到各种网页或资源的数据，可能是同步或者是异步获取的。<br>网页被交给HTML解释器转换成一系列词语(Token)。<br>解释器根据词语构建节点(Node)，形成DOM树。<br>如果节点是JS，调用JS引擎解释并执行。<br>JS代码修改DOM树的结构<br>如果节点需要依赖其他资源，如图片、css等，调用资源加载器来加载他们，但他们是异步的，不会阻碍当前DOM树的继续构建，如果是JS资源URL(未标记异步)，则需要停止当前DOM数的构建，直到JS引擎执行后才继续构建DOM树。 至此会触发两个事件，一个时DOMConent表示DOM构建完全(和jQuery的$(function(){})()一样),后者是 onload 事件，表示DOM树所依赖的各种图片、css等资源加载完毕，通常这两个事件不是同时发生。<br>接下来是利用CSS和DOM树构建RenderObject树直到绘图上下文。</p>
+<p>CSS文件被CSS解释器解释成表示结构。<br>CSS解释器完成工作之后，在DOM树上附加解释后的样式信息，包括布局计算，这就是RenderObject树。<br>RenderObject节点在创建的同时，WebKit会根据网页的层次结构创建RenderLayer树，同时构建一个虚拟的绘图上下文。<br>实际上，DOM树，RenderObject树，RenderLayer树和绘图上下文在关闭浏览器前并不会被销毁。</p>
+<p>最后，根据绘图上下文生成最终图像，主要依赖2D和3D图形库。</p>
+<p>绘图上下文将每个绘图操作桥接到不同的具体实现类，也就是绘图具体实现类，绘图实现类将2D图形库或者3D图形库绘制的结果保存下来，交给浏览器来显示。</p>
+<hr>
+<h2 id="http状态码有那些？分别代表是什么意思？"><a href="#http状态码有那些？分别代表是什么意思？" class="headerlink" title="http状态码有那些？分别代表是什么意思？"></a>http状态码有那些？分别代表是什么意思？</h2><p>简单版<br>      [<br>          100  Continue    继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息<br>          200  OK         正常返回信息<br>          201  Created      请求成功并且服务器创建了新的资源<br>          202  Accepted     服务器已接受请求，但尚未处理<br>          301  Moved Permanently  请求的网页已永久移动到新位置。<br>          302 Found          临时性重定向。<br>          303 See Other      临时性重定向，且总是使用 GET 请求新的 URI。<br>          304  Not Modified 自从上次请求后，请求的网页未修改过。</p>
+<pre><code>      400 Bad Request  服务器无法理解请求的格式，客户端不应当尝试再次使用相同的内容发起请求。
+      401 Unauthorized 请求未授权。
+      403 Forbidden      禁止访问。
+      404 Not Found      找不到如何与 URI 相匹配的资源。
+
+      500 Internal Server Error  最常见的服务器端错误。
+      503 Service Unavailable 服务器端暂时无法处理请求（可能是过载或维护）。
+  ]
+
+完整版
+1**(信息类)：表示接收到请求并且继续处理
+  100——客户必须继续发出请求
+  101——客户要求服务器根据请求转换HTTP协议版本
+
+2**(响应成功)：表示动作被成功接收、理解和接受
+  200——表明该请求被成功地完成，所请求的资源发送回客户端
+  201——提示知道新文件的URL
+  202——接受和处理、但处理未完成
+  203——返回信息不确定或不完整
+  204——请求收到，但返回信息为空
+  205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件
+  206——服务器已经完成了部分用户的GET请求
+
+3**(重定向类)：为了完成指定的动作，必须接受进一步处理
+  300——请求的资源可在多处得到
+  301——本网页被永久性转移到另一个URL
+  302——请求的网页被转移到一个新的地址，但客户访问仍继续通过原始URL地址，重定向，新的URL会在response中的Location中返回，浏览器将会使用新的URL发出新的Request。
+  303——建议客户访问其他URL或访问方式
+  304——自从上次请求后，请求的网页未修改过，服务器返回此响应时，不会返回网页内容，代表上次的文档已经被缓存了，还可以继续使用
+  305——请求的资源必须从服务器指定的地址得到
+  306——前一版本HTTP中使用的代码，现行版本中不再使用
+  307——申明请求的资源临时性删除
+
+4**(客户端错误类)：请求包含错误语法或不能正确执行
+  400——客户端请求有语法错误，不能被服务器所理解
+  401——请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用
+  HTTP 401.1 - 未授权：登录失败
+  　　HTTP 401.2 - 未授权：服务器配置问题导致登录失败
+  　　HTTP 401.3 - ACL 禁止访问资源
+  　　HTTP 401.4 - 未授权：授权被筛选器拒绝
+  HTTP 401.5 - 未授权：ISAPI 或 CGI 授权失败
+  402——保留有效ChargeTo头响应
+  403——禁止访问，服务器收到请求，但是拒绝提供服务
+  HTTP 403.1 禁止访问：禁止可执行访问
+  　　HTTP 403.2 - 禁止访问：禁止读访问
+  　　HTTP 403.3 - 禁止访问：禁止写访问
+  　　HTTP 403.4 - 禁止访问：要求 SSL
+  　　HTTP 403.5 - 禁止访问：要求 SSL 128
+  　　HTTP 403.6 - 禁止访问：IP 地址被拒绝
+  　　HTTP 403.7 - 禁止访问：要求客户证书
+  　　HTTP 403.8 - 禁止访问：禁止站点访问
+  　　HTTP 403.9 - 禁止访问：连接的用户过多
+  　　HTTP 403.10 - 禁止访问：配置无效
+  　　HTTP 403.11 - 禁止访问：密码更改
+  　　HTTP 403.12 - 禁止访问：映射器拒绝访问
+  　　HTTP 403.13 - 禁止访问：客户证书已被吊销
+  　　HTTP 403.15 - 禁止访问：客户访问许可过多
+  　　HTTP 403.16 - 禁止访问：客户证书不可信或者无效
+  HTTP 403.17 - 禁止访问：客户证书已经到期或者尚未生效
+  404——一个404错误表明可连接服务器，但服务器无法取得所请求的网页，请求资源不存在。eg：输入了错误的URL
+  405——用户在Request-Line字段定义的方法不允许
+  406——根据用户发送的Accept拖，请求资源不可访问
+  407——类似401，用户必须首先在代理服务器上得到授权
+  408——客户端没有在用户指定的饿时间内完成请求
+  409——对当前资源状态，请求不能完成
+  410——服务器上不再有此资源且无进一步的参考地址
+  411——服务器拒绝用户定义的Content-Length属性请求
+  412——一个或多个请求头字段在当前请求中错误
+  413——请求的资源大于服务器允许的大小
+  414——请求的资源URL长于服务器允许的长度
+  415——请求资源不支持请求项目格式
+  416——请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段
+  417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求长。
+
+5**(服务端错误类)：服务器不能正确执行一个正确的请求
+  HTTP 500 - 服务器遇到错误，无法完成请求
+  　　HTTP 500.100 - 内部服务器错误 - ASP 错误
+  　　HTTP 500-11 服务器关闭
+  　　HTTP 500-12 应用程序重新启动
+  　　HTTP 500-13 - 服务器太忙
+  　　HTTP 500-14 - 应用程序无效
+  　　HTTP 500-15 - 不允许请求 global.asa
+  　　Error 501 - 未实现
+HTTP 502 - 网关错误
+HTTP 503：由于超载或停机维护，服务器目前无法使用，一段时间后可能恢复正常
+</code></pre><hr>
+<h1 id="JQUERY"><a href="#JQUERY" class="headerlink" title="JQUERY"></a>JQUERY</h1><h2 id="1-你在公司是怎么用jquery的？"><a href="#1-你在公司是怎么用jquery的？" class="headerlink" title="1 你在公司是怎么用jquery的？"></a>1 你在公司是怎么用jquery的？</h2><p>答：在项目中是怎么用的是看看你有没有项目经验(根据自己的实际情况来回答) 你用过的选择器啊，复选框啊，表单啊，ajax啊，事件等配置<a href="http://lib.csdn.net/base/jquery" target="_blank" rel="external">jQuery</a>环境 下载jquery类库 在jsp页面引用jquery类库即可</p>
+<p><script type="text/[JavaScript](http://lib.csdn.net/base/javascript)" src="jquery/jquery-1.7.2.min.js">接下来通过在<script> $(function(){ }); </script></p>
+<h2 id="2-你为什么要使用jquery？"><a href="#2-你为什么要使用jquery？" class="headerlink" title="2 你为什么要使用jquery？"></a>2 你为什么要使用jquery？</h2><p>答：因为jQuery是轻量级的框架，大小不到30kb,它有强大的选择器，出色的DOM操作的封装，有可靠的事件处理机制(jQuery在处理事件绑定的时候相当的可靠)，完善的ajax(它的ajax封装的非常的好，不需要考虑复杂浏览器的兼容性和XMLHttpRequest对象的创建和使用的问题。) 出色的浏览器的兼容性。 而且支持链式操作，隐式迭代。行为层和结构层的分离，还支持丰富的插件，jquery的文档也非常的丰富。</p>
+<h2 id="3-你觉得jquery有哪些好处？-答案同上"><a href="#3-你觉得jquery有哪些好处？-答案同上" class="headerlink" title="3 你觉得jquery有哪些好处？ 答案同上"></a>3 你觉得jquery有哪些好处？ 答案同上</h2><h2 id="4-你使用jquery遇到过哪些问题，你是怎么解决的？"><a href="#4-你使用jquery遇到过哪些问题，你是怎么解决的？" class="headerlink" title="4 你使用jquery遇到过哪些问题，你是怎么解决的？"></a>4 你使用jquery遇到过哪些问题，你是怎么解决的？</h2><p>答：这个答案是开发的，看你是否有相关的项目经验。例前台拿不到值，JSON 可是出现的错误(多了一个空格等)这编译是不会报错的 jquery库与其他库冲突：1&gt;如果其他库在jquery库之前导入的话1.我们可以通过jquery.noconflict()将变量的$的控制权过度给其他库2.自定义快捷键,用一个变量接住jquery.noconflict()3.通过函数传参2&gt;如果jquery库在其他库之前导入就直接使用jquery今天在处理一个数据问题时，发现jQuery.ajax()方法返回的值一直有问题，清除缓存后数据无误，多次<a href="http://lib.csdn.net/base/softwaretest" target="_blank" rel="external">测试</a>后发现返回的值都是之前的值，并且一直未执行url(后台为<a href="http://lib.csdn.net/base/javase" target="_blank" rel="external">Java</a>，设置断点一直未进入)。在网上查找下,发现是未设置type的原因。 如果没设置jQuery.ajax的type=”Post”，那么ajax就会默认type=”Get”，这就会导致之前数据被缓存起来。加上type=”Post”，问题解决！</p>
+<h2 id="5-你知道jquery中的选择器吗，请讲一下有哪些选择器？"><a href="#5-你知道jquery中的选择器吗，请讲一下有哪些选择器？" class="headerlink" title="5 你知道jquery中的选择器吗，请讲一下有哪些选择器？"></a>5 你知道jquery中的选择器吗，请讲一下有哪些选择器？</h2><p>答 ：jQuery中的选择器大致分为:基本选择器，层次选择器，过滤选择器，表单选择器</p>
+<h2 id="6-jquery中的选择器-和-css中的选择器有区别吗？"><a href="#6-jquery中的选择器-和-css中的选择器有区别吗？" class="headerlink" title="6 jquery中的选择器 和 css中的选择器有区别吗？"></a>6 jquery中的选择器 和 css中的选择器有区别吗？</h2><p>答：jQuery选择器支持CSS里的选择器，jQuery选择器可用来添加样式和添加相应的行为CSS 中的选择器是只能添加相应的样式</p>
+<h2 id="7-你觉得jquery中的选择器有什么优势？"><a href="#7-你觉得jquery中的选择器有什么优势？" class="headerlink" title="7 你觉得jquery中的选择器有什么优势？"></a>7 你觉得jquery中的选择器有什么优势？</h2><p>答：简单的写法 $(‘ID’) 来代替 document.getElementById()函数支持CSS1 到<a href="http://lib.csdn.net/base/css3" target="_blank" rel="external">CSS3</a> 选择器完善的处理机制(就算写错了id也不会报错)</p>
+<h2 id="8-你在使用选择器的时候有有没有什么觉得要注意的地方？"><a href="#8-你在使用选择器的时候有有没有什么觉得要注意的地方？" class="headerlink" title="8 你在使用选择器的时候有有没有什么觉得要注意的地方？"></a>8 你在使用选择器的时候有有没有什么觉得要注意的地方？</h2><p>答: 1 选择器中含有”.”,”#”,”[“ 等特殊字符的时候需要进行转译2 属性选择器的引号问题3 选择器中含有空格的注意事项</p>
+<h2 id="9-jquery对象和dom对象是怎样转换的？"><a href="#9-jquery对象和dom对象是怎样转换的？" class="headerlink" title="9 jquery对象和dom对象是怎样转换的？"></a>9 jquery对象和dom对象是怎样转换的？</h2><p>答 ：jquery转DOM对象:jQuery 对象是一个数组对象，可以通过[index]的丰富得到相应的DOM对象还可以通过get[index]去得到相应的DOM对象。DOM对象转jQuery对象:$(DOM对象)</p>
+<h2 id="10-你是如何使用jquery中的ajax的？"><a href="#10-你是如何使用jquery中的ajax的？" class="headerlink" title="10 你是如何使用jquery中的ajax的？"></a>10 你是如何使用jquery中的ajax的？</h2><p>答: 如果是一些常规的ajax程序的话，使用load(),$.get(),$.post(),就可以搞定了，一般我会使用的是$.post() 方法。如果需要设定beforeSend(提交前回调函数),error(失败后处理),success(成功后处理)及complete(请求完成后处理)回调函数等，这个时候我会使用$.ajax()</p>
+<h2 id="11-你觉得jquery中的ajax好用吗，为什么？"><a href="#11-你觉得jquery中的ajax好用吗，为什么？" class="headerlink" title="11 你觉得jquery中的ajax好用吗，为什么？"></a>11 你觉得jquery中的ajax好用吗，为什么？</h2><p>答: 好用的。 因为jQuery提供了一些日常开发中夙瑶的快捷操作，例 load，ajax，get，post等等，所以使用jQuery开发ajax将变得极其简单，我们就可以集中精力在业务和用户的体验上，不需要去理会那些繁琐的XMLHttpRequest对象了。</p>
+<h2 id="12-jquery中-get-提交和-post-提交有区别吗？"><a href="#12-jquery中-get-提交和-post-提交有区别吗？" class="headerlink" title="12 jquery中$.get()提交和$.post()提交有区别吗？"></a>12 jquery中$.get()提交和$.post()提交有区别吗？</h2><p>答: 1 $.get() 方法使用GET方法来进行异步请求的。$.post() 方法使用POST方法来进行异步请求的。2 get请求会将参数跟在URL后进行传递，而POST请求则是作为HTTP消息的实体内容发送给Web服务器的，这种传递是对用户不可见的。3 get方式传输的数据大小不能超过2KB 而POST要大的多4 GET 方式请求的数据会被浏览器缓存起来，因此有安全问题。</p>
+<h2 id="13-jquery中的load方法一般怎么用的？"><a href="#13-jquery中的load方法一般怎么用的？" class="headerlink" title="13 jquery中的load方法一般怎么用的？"></a>13 jquery中的load方法一般怎么用的？</h2><p>答：load方法一般在 载入远程HTML 代码并插入到DOM中的时候用，通常用来从Web服务器上获取静态的数据文件。如果要传递参数的话，可以使用$.get() 或 $.post()。</p>
+<h2 id="14-在jquery中你是如何去操作样式的？"><a href="#14-在jquery中你是如何去操作样式的？" class="headerlink" title="14 在jquery中你是如何去操作样式的？"></a>14 在jquery中你是如何去操作样式的？</h2><p>答: addClass() 来追加样式 ，removeClass() 来删除样式，toggle() 来切换样式</p>
+<h2 id="15-简单的讲叙一下jquery是怎么处理事件的，你用过哪些事件？"><a href="#15-简单的讲叙一下jquery是怎么处理事件的，你用过哪些事件？" class="headerlink" title="15 简单的讲叙一下jquery是怎么处理事件的，你用过哪些事件？"></a>15 简单的讲叙一下jquery是怎么处理事件的，你用过哪些事件？</h2><p>答: 首先去装载文档，在页面家在完毕后，浏览器会通过javascript 为DOM元素添加事件。</p>
+<h2 id="16-你使用过jquery中的动画吗，是怎样用的？"><a href="#16-你使用过jquery中的动画吗，是怎样用的？" class="headerlink" title="16 你使用过jquery中的动画吗，是怎样用的？"></a>16 你使用过jquery中的动画吗，是怎样用的？</h2><p>答:使用过。hide() 和 show() 同时修改多个样式属性。像高度，宽度，不透明度。 fadeIn() 和fadeOut() fadeTo() 只改变不透明度slideUp() 和 slideDown() slideToggle() 只改变高度animate() 属于自定义动画的方法.</p>
+<h2 id="17-你使用过jquery中的插件吗？-答-看个人的实力和经验来回答了。"><a href="#17-你使用过jquery中的插件吗？-答-看个人的实力和经验来回答了。" class="headerlink" title="17 你使用过jquery中的插件吗？ 答:看个人的实力和经验来回答了。"></a>17 你使用过jquery中的插件吗？ 答:看个人的实力和经验来回答了。</h2><h2 id="18-你一般用什么去提交数据，为什么？"><a href="#18-你一般用什么去提交数据，为什么？" class="headerlink" title="18 你一般用什么去提交数据，为什么？"></a>18 你一般用什么去提交数据，为什么？</h2><p>答:一般我会使用的是$.post() 方法。如果需要设定beforeSend(提交前回调函数),error(失败后处理),success(成功后处理及complete(请求完成后处理)回调函数等，这个时候我会使用$.ajax()</p>
+<h2 id="19-在jquery中引入css有几种方式？"><a href="#19-在jquery中引入css有几种方式？" class="headerlink" title="19 在jquery中引入css有几种方式？"></a>19 在jquery中引入css有几种方式？</h2><p>答:四种 行内式，内嵌式，导入式，链接式</p>
+<h2 id="20-你在jquery中使用过哪些插入节点的方法，它们的区别是什么？"><a href="#20-你在jquery中使用过哪些插入节点的方法，它们的区别是什么？" class="headerlink" title="20 你在jquery中使用过哪些插入节点的方法，它们的区别是什么？"></a>20 你在jquery中使用过哪些插入节点的方法，它们的区别是什么？</h2><p>答:append(),appendTo(),prepend(),prependTo(),after(),insertAfter()，before(),insertBefore() 大致可以分为 内部追加和外部追加append() 表式向每个元素内部追加内容。appendTo()表示 讲所有的元素追加到指定的元素中。例$(A)appendTo(B) 是将A追加到B中下面的方法解释类似。</p>
+<h2 id="21-你使用过包裹节点的方法吗，包裹节点有方法有什么好处？"><a href="#21-你使用过包裹节点的方法吗，包裹节点有方法有什么好处？" class="headerlink" title="21 你使用过包裹节点的方法吗，包裹节点有方法有什么好处？"></a>21 你使用过包裹节点的方法吗，包裹节点有方法有什么好处？</h2><p>答: wrapAll(),wrap(), wrapInner() 需要在文档中插入额外的结构化标记的时候可以使用这些包裹的方法应为它不会帛画原始文档的语义</p>
+<h2 id="22-jquery中如何来获取或和设置属性？"><a href="#22-jquery中如何来获取或和设置属性？" class="headerlink" title="22 jquery中如何来获取或和设置属性？"></a>22 jquery中如何来获取或和设置属性？</h2><p>jQuery中可以用attr()方法来获取和设置元素属性removeAttr() 方法来删除元素属性</p>
+<h2 id="23-如何来设置和获取HTML-和文本的值？"><a href="#23-如何来设置和获取HTML-和文本的值？" class="headerlink" title="23 如何来设置和获取HTML 和文本的值？"></a>23 如何来设置和获取HTML 和文本的值？</h2><p>答：html()方法 类似于innerHTML属性 可以用来读取或者设置某个元素中的HTML内容注意：html() 可以用于xhtml文档 不能用于xml文档text() 类似于innerText属性 可以用来读取或设置某个元素中文本内容。val() 可以用来设置和获取元素的值</p>
+<h2 id="24-你jquery中有哪些方法可以遍历节点？"><a href="#24-你jquery中有哪些方法可以遍历节点？" class="headerlink" title="24 你jquery中有哪些方法可以遍历节点？"></a>24 你jquery中有哪些方法可以遍历节点？</h2><p>答 ：children() 取得匹配元素的子元素集合,只考虑子元素不考虑后代元素 next() 取得匹配元素后面紧邻的同辈元素prev() 取得匹配元素前面紧邻的同辈元素siblings() 取得匹配元素前后的所有同辈元素closest() 取得最近的匹配元素find() 取得匹配元素中的元素集合 包括子代和后代</p>
+<h2 id="25-子元素选择器-和后代选择器元素有什么区别？"><a href="#25-子元素选择器-和后代选择器元素有什么区别？" class="headerlink" title="25 子元素选择器 和后代选择器元素有什么区别？"></a>25 子元素选择器 和后代选择器元素有什么区别？</h2><p>答:子代元素是找子节点下的所有元素,后代元素是找子节点或子节点的子节点中的元素</p>
+<h2 id="26-在jquery中可以替换节点吗？"><a href="#26-在jquery中可以替换节点吗？" class="headerlink" title="26 在jquery中可以替换节点吗？"></a>26 在jquery中可以替换节点吗？</h2><p>答：可以 在jQuery中有两者替换节点的方式 replaceWith() 和 replaceAll()例如在</p><p title="hao are you">hao are you</p>替换成<strong>I am fine</strong>$(‘p’).replaceWith(‘<strong>I am fine</strong>‘); replaceAll 与replaceWith的用法前后调换一下即可。<em>**</em><p></p>
+<h2 id="27-你觉得beforeSend方法有什么用？"><a href="#27-你觉得beforeSend方法有什么用？" class="headerlink" title="27 你觉得beforeSend方法有什么用？"></a>27 你觉得beforeSend方法有什么用？</h2><p>答：发送请求前可以修改XMLHttpRequest对象的函数，在beforeSend中如果返回false 可以取消本次的Ajax请求。XMLHttpRequest对象是唯一的参数所以在这个方法里可以做验证</p>
+<h2 id="28-siblings-方法-和-‘prev-div’-选择器是一样的嘛？"><a href="#28-siblings-方法-和-‘prev-div’-选择器是一样的嘛？" class="headerlink" title="28 siblings() 方法 和 $(‘prev~div’)选择器是一样的嘛？"></a>28 siblings() 方法 和 $(‘prev~div’)选择器是一样的嘛？</h2><p>答: $(‘prev~div’) 只能选择’#prev’元素后面的同辈<div>元素而siblings()方法与前后的文职无关，只要是同辈节点就都能匹配。</div></p>
+<h2 id="29-你在ajax中使用过JSON吗，你是如何用的？"><a href="#29-你在ajax中使用过JSON吗，你是如何用的？" class="headerlink" title="29 你在ajax中使用过JSON吗，你是如何用的？"></a>29 你在ajax中使用过JSON吗，你是如何用的？</h2><p>答:使用过，在$.getJSON() 方法的时候就是。因为 $.getJSON() 就是用于加载JSON文件的</p>
+<h2 id="30-有哪些查询节点的选择器？"><a href="#30-有哪些查询节点的选择器？" class="headerlink" title="30 有哪些查询节点的选择器？"></a>30 有哪些查询节点的选择器？</h2><p>答：我在公司使用过 :first 查询第一个，:last 查询最后一个，:odd查询奇数但是索引从0开始:even 查询偶数，:eq(index)查询相等的 ,:gt(index)查询大于index的 ,:lt查询小于index:header 选取所有的标题等</p>
+<h2 id="31-nextAll-能-替代-‘prev-siblindgs’-选择器吗？"><a href="#31-nextAll-能-替代-‘prev-siblindgs’-选择器吗？" class="headerlink" title="31 nextAll() 能 替代$(‘prev~siblindgs’)选择器吗？"></a>31 nextAll() 能 替代$(‘prev~siblindgs’)选择器吗？</h2><p>答:能。 使用nextAll() 和使用$(‘prev~siblindgs’) 是一样的</p>
+<h2 id="32-jQuery中有几种方法可以来设置和获取样式"><a href="#32-jQuery中有几种方法可以来设置和获取样式" class="headerlink" title="32 jQuery中有几种方法可以来设置和获取样式"></a>32 jQuery中有几种方法可以来设置和获取样式</h2><p>答 ：addClass() 方法，attr() 方法</p>
+<h2 id="33-document-ready-方法和window-onload有什么区别？"><a href="#33-document-ready-方法和window-onload有什么区别？" class="headerlink" title="33 $(document).ready()方法和window.onload有什么区别？"></a>33 $(document).ready()方法和window.onload有什么区别？</h2><p>答: 两个方法有相似的功能，但是在实行时机方面是有区别的。 1window.onload方法是在网页中所有的元素(包括元素的所有关联文件)完全加载到浏览器后才执行的。2 $(document).ready() 方法可以在DOM载入就绪时就对其进行操纵，并调用执行绑定的函数。</p>
+<h2 id="34-jQuery是如何处理缓存的？"><a href="#34-jQuery是如何处理缓存的？" class="headerlink" title="34 jQuery是如何处理缓存的？"></a>34 jQuery是如何处理缓存的？</h2><p>答 ：要处理缓存就是禁用缓存.1 通过$.post() 方法来获取数据，那么默认就是禁用缓存的。2 通过$.get()方法 来获取数据，可以通过设置时间戳来避免缓存。可以在URL后面加上+(+new Date)例 $.get(‘ajax.xml?’+(+new Date),function () { //内容 }); 3 通过$.ajax 方法来获取数据，只要设置cache:false即可。</p>
+<h2 id="35-getScript-方法-和-getJson-方法有什么区别？"><a href="#35-getScript-方法-和-getJson-方法有什么区别？" class="headerlink" title="35 $.getScript()方法 和 $.getJson() 方法有什么区别？"></a>35 $.getScript()方法 和 $.getJson() 方法有什么区别？</h2><p>答: 1 $.getScript() 方法可以直接加载.js文件，并且不需要对javascript文件进行处理，javascript文件会自动执行。2 $.getJson() 是用于加载JSON 文件的 ，用法和$.getScript()</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/26/javascript笔记（持续更新）/" rel="next" title="javascript笔记（持续更新）">
+                <i class="fa fa-chevron-left"></i> javascript笔记（持续更新）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/05/31/web前端基础知识点（凯丽同学总结）/"
+     data-title="web前端基础知识点（凯丽同学总结）"
+     data-content=""
+     data-url="http://inpotato.com/2017/05/31/web前端基础知识点（凯丽同学总结）/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/31/web前端基础知识点（凯丽同学总结）/"
+           data-title="web前端基础知识点（凯丽同学总结）" data-url="http://inpotato.com/2017/05/31/web前端基础知识点（凯丽同学总结）/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="potato" />
+          <p class="site-author-name" itemprop="name">potato</p>
+          <p class="site-description motion-element" itemprop="description">活蹦乱跳的半职业码农</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/potatoch" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5545192891?topnav=1&wvr=6&topsug=1&is_hot=1" target="_blank" title="weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/potato-20" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#锚点"><span class="nav-number">1.1.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#html-获取页面，浏览器，屏幕宽高"><span class="nav-number">1.2.</span> <span class="nav-text">html 获取页面，浏览器，屏幕宽高</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Doctype"><span class="nav-number">1.3.</span> <span class="nav-text">Doctype</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准模式与兼容模式（怪异模式）各有什么区别"><span class="nav-number">1.4.</span> <span class="nav-text">标准模式与兼容模式（怪异模式）各有什么区别?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><span class="nav-number">1.5.</span> <span class="nav-text">行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面导入样式时，使用link和-import有什么区别？"><span class="nav-number">1.6.</span> <span class="nav-text">页面导入样式时，使用link和@import有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍一下你对浏览器内核的理解？"><span class="nav-number">1.7.</span> <span class="nav-text">介绍一下你对浏览器内核的理解？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML、XML、XHTML-有什么区别？"><span class="nav-number">1.8.</span> <span class="nav-text">HTML、XML、XHTML 有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样理解-HTML-语义化？"><span class="nav-number">1.9.</span> <span class="nav-text">怎样理解 HTML 语义化？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样理解内容与样式分离的原则"><span class="nav-number">1.10.</span> <span class="nav-text">怎样理解内容与样式分离的原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#title与h1的区别、b与strong的区别、i与em的区别？"><span class="nav-number">1.11.</span> <span class="nav-text">title与h1的区别、b与strong的区别、i与em的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面可见性（Page-Visibility-API）-可以有哪些用途？"><span class="nav-number">1.12.</span> <span class="nav-text">页面可见性（Page Visibility API） 可以有哪些用途？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iframe有那些缺点？"><span class="nav-number">1.13.</span> <span class="nav-text">iframe有那些缺点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Label的作用是什么？是怎么用的？"><span class="nav-number">1.14.</span> <span class="nav-text">Label的作用是什么？是怎么用的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#meta？"><span class="nav-number">1.15.</span> <span class="nav-text">meta？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5"><span class="nav-number">2.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#新特性"><span class="nav-number">2.1.</span> <span class="nav-text">新特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对html5的语义话的理解"><span class="nav-number">2.2.</span> <span class="nav-text">对html5的语义话的理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何实现浏览器内多个标签页之间的通信-阿里"><span class="nav-number">2.3.</span> <span class="nav-text">如何实现浏览器内多个标签页之间的通信? (阿里)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML5-能够本地存储数据webstorage"><span class="nav-number">2.4.</span> <span class="nav-text">HTML5 能够本地存储数据webstorage</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请描述一下-cookies，sessionStorage-和-localStorage-的区别？"><span class="nav-number">2.5.</span> <span class="nav-text">请描述一下 cookies，sessionStorage 和 localStorage 的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用程序缓存-离线缓存-："><span class="nav-number">2.6.</span> <span class="nav-text">应用程序缓存(离线缓存)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#websocket"><span class="nav-number">2.7.</span> <span class="nav-text">websocket</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">3.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？"><span class="nav-number">3.1.</span> <span class="nav-text">介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS选择符有哪些？哪些属性可以继承？"><span class="nav-number">3.2.</span> <span class="nav-text">CSS选择符有哪些？哪些属性可以继承？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS优先级算法如何计算？"><span class="nav-number">3.3.</span> <span class="nav-text">CSS优先级算法如何计算？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪类-伪元素"><span class="nav-number">3.4.</span> <span class="nav-text">伪类 伪元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3新增伪类有那些？"><span class="nav-number">3.5.</span> <span class="nav-text">CSS3新增伪类有那些？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请解释一下为什么需要清除浮动？清除浮动的方式"><span class="nav-number">3.6.</span> <span class="nav-text">请解释一下为什么需要清除浮动？清除浮动的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要初始化CSS样式。"><span class="nav-number">3.7.</span> <span class="nav-text">为什么要初始化CSS样式。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用纯CSS创建一个三角形的原理是什么？"><span class="nav-number">3.8.</span> <span class="nav-text">用纯CSS创建一个三角形的原理是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧-？"><span class="nav-number">3.9.</span> <span class="nav-text">经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是外边距合并？"><span class="nav-number">3.10.</span> <span class="nav-text">什么是外边距合并？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zoom-1的清除浮动原理"><span class="nav-number">3.11.</span> <span class="nav-text">zoom:1的清除浮动原理?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何居中div？"><span class="nav-number">3.12.</span> <span class="nav-text">如何居中div？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#position的值relative和absolute定位原点是？"><span class="nav-number">3.13.</span> <span class="nav-text">position的值relative和absolute定位原点是？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS3"><span class="nav-number">4.</span> <span class="nav-text">CSS3</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#css-新增属性5个"><span class="nav-number">4.1.</span> <span class="nav-text">css 新增属性5个</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请解释一下CSS3的Flexbox（弹性盒布局模型）-以及适用场景？"><span class="nav-number">4.2.</span> <span class="nav-text">请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3-的-Transitions-Transforms-和-Animation"><span class="nav-number">4.3.</span> <span class="nav-text">CSS3 的 Transitions, Transforms 和 Animation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#媒体查询"><span class="nav-number">4.4.</span> <span class="nav-text">媒体查询</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JS"><span class="nav-number">5.</span> <span class="nav-text">JS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#跨域"><span class="nav-number">5.1.</span> <span class="nav-text">跨域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ajax实现流程"><span class="nav-number">5.2.</span> <span class="nav-text">Ajax实现流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单线程"><span class="nav-number">5.3.</span> <span class="nav-text">单线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#垃圾回收"><span class="nav-number">5.4.</span> <span class="nav-text">垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript的数据类型"><span class="nav-number">5.5.</span> <span class="nav-text">JavaScript的数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#继承"><span class="nav-number">5.6.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript创建对象的几种方式？"><span class="nav-number">5.7.</span> <span class="nav-text">javascript创建对象的几种方式？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript有几种类型的值？，你能画一下他们的内存图吗？"><span class="nav-number">5.8.</span> <span class="nav-text">JavaScript有几种类型的值？，你能画一下他们的内存图吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说几条写JavaScript的基本规范？"><span class="nav-number">5.9.</span> <span class="nav-text">说几条写JavaScript的基本规范？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#封装cookie的添加，删除，查询方法"><span class="nav-number">5.10.</span> <span class="nav-text">封装cookie的添加，删除，查询方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同源策略"><span class="nav-number">5.11.</span> <span class="nav-text">同源策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍js有哪些内置对象？"><span class="nav-number">5.12.</span> <span class="nav-text">介绍js有哪些内置对象？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原型和原型链（-prototype-proto）"><span class="nav-number">5.13.</span> <span class="nav-text">原型和原型链（ prototype, proto）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">5.13.1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1，原型"><span class="nav-number">5.13.2.</span> <span class="nav-text">1，原型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#prototype"><span class="nav-number">5.13.2.1.</span> <span class="nav-text">prototype</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#proto"><span class="nav-number">5.13.2.2.</span> <span class="nav-text">proto</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2，原型-链"><span class="nav-number">5.13.2.3.</span> <span class="nav-text">2，原型 链</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3，-instanceOf"><span class="nav-number">5.13.2.4.</span> <span class="nav-text">3， instanceOf</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">5.14.</span> <span class="nav-text">闭包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包的定义？"><span class="nav-number">5.14.1.</span> <span class="nav-text">闭包的定义？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包缺点"><span class="nav-number">5.15.</span> <span class="nav-text">闭包缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包与隔离作用域"><span class="nav-number">5.16.</span> <span class="nav-text">闭包与隔离作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域与作用域链-？"><span class="nav-number">5.17.</span> <span class="nav-text">作用域与作用域链 ？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#this指向"><span class="nav-number">5.18.</span> <span class="nav-text">this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数有所属对象时：指向所属对象"><span class="nav-number">5.18.1.</span> <span class="nav-text">函数有所属对象时：指向所属对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没调用对象就指向全局对象"><span class="nav-number">5.18.2.</span> <span class="nav-text">没调用对象就指向全局对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#构造器中的-this：指向新对象"><span class="nav-number">5.18.2.1.</span> <span class="nav-text">构造器中的 this：指向新对象</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apply-和-call-调用以及-bind-绑定：指向绑定的对象"><span class="nav-number">5.18.3.</span> <span class="nav-text">apply 和 call 调用以及 bind 绑定：指向绑定的对象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件模型"><span class="nav-number">5.19.</span> <span class="nav-text">事件模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托"><span class="nav-number">5.20.</span> <span class="nav-text">事件委托</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#模块化"><span class="nav-number">6.</span> <span class="nav-text">模块化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AMD与CMD"><span class="nav-number">6.1.</span> <span class="nav-text">AMD与CMD</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Node-amp-Express"><span class="nav-number">7.</span> <span class="nav-text">Node&Express</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#对Node的优点和缺点提出了自己的看法？"><span class="nav-number">7.1.</span> <span class="nav-text">对Node的优点和缺点提出了自己的看法？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#express"><span class="nav-number">7.2.</span> <span class="nav-text">express</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#中间件含义"><span class="nav-number">7.2.1.</span> <span class="nav-text">中间件含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Express-几种中间件："><span class="nav-number">7.2.2.</span> <span class="nav-text">Express 几种中间件：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">8.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#httphttps"><span class="nav-number">8.1.</span> <span class="nav-text">httphttps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一个页面从输入-URL-到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）"><span class="nav-number">8.2.</span> <span class="nav-text">一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面渲染流程主要分三部分"><span class="nav-number">8.3.</span> <span class="nav-text">页面渲染流程主要分三部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#http状态码有那些？分别代表是什么意思？"><span class="nav-number">8.4.</span> <span class="nav-text">http状态码有那些？分别代表是什么意思？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JQUERY"><span class="nav-number">9.</span> <span class="nav-text">JQUERY</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-你在公司是怎么用jquery的？"><span class="nav-number">9.1.</span> <span class="nav-text">1 你在公司是怎么用jquery的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-你为什么要使用jquery？"><span class="nav-number">9.2.</span> <span class="nav-text">2 你为什么要使用jquery？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-你觉得jquery有哪些好处？-答案同上"><span class="nav-number">9.3.</span> <span class="nav-text">3 你觉得jquery有哪些好处？ 答案同上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-你使用jquery遇到过哪些问题，你是怎么解决的？"><span class="nav-number">9.4.</span> <span class="nav-text">4 你使用jquery遇到过哪些问题，你是怎么解决的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-你知道jquery中的选择器吗，请讲一下有哪些选择器？"><span class="nav-number">9.5.</span> <span class="nav-text">5 你知道jquery中的选择器吗，请讲一下有哪些选择器？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-jquery中的选择器-和-css中的选择器有区别吗？"><span class="nav-number">9.6.</span> <span class="nav-text">6 jquery中的选择器 和 css中的选择器有区别吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-你觉得jquery中的选择器有什么优势？"><span class="nav-number">9.7.</span> <span class="nav-text">7 你觉得jquery中的选择器有什么优势？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-你在使用选择器的时候有有没有什么觉得要注意的地方？"><span class="nav-number">9.8.</span> <span class="nav-text">8 你在使用选择器的时候有有没有什么觉得要注意的地方？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-jquery对象和dom对象是怎样转换的？"><span class="nav-number">9.9.</span> <span class="nav-text">9 jquery对象和dom对象是怎样转换的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-你是如何使用jquery中的ajax的？"><span class="nav-number">9.10.</span> <span class="nav-text">10 你是如何使用jquery中的ajax的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-你觉得jquery中的ajax好用吗，为什么？"><span class="nav-number">9.11.</span> <span class="nav-text">11 你觉得jquery中的ajax好用吗，为什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-jquery中-get-提交和-post-提交有区别吗？"><span class="nav-number">9.12.</span> <span class="nav-text">12 jquery中$.get()提交和$.post()提交有区别吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-jquery中的load方法一般怎么用的？"><span class="nav-number">9.13.</span> <span class="nav-text">13 jquery中的load方法一般怎么用的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-在jquery中你是如何去操作样式的？"><span class="nav-number">9.14.</span> <span class="nav-text">14 在jquery中你是如何去操作样式的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-简单的讲叙一下jquery是怎么处理事件的，你用过哪些事件？"><span class="nav-number">9.15.</span> <span class="nav-text">15 简单的讲叙一下jquery是怎么处理事件的，你用过哪些事件？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-你使用过jquery中的动画吗，是怎样用的？"><span class="nav-number">9.16.</span> <span class="nav-text">16 你使用过jquery中的动画吗，是怎样用的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-你使用过jquery中的插件吗？-答-看个人的实力和经验来回答了。"><span class="nav-number">9.17.</span> <span class="nav-text">17 你使用过jquery中的插件吗？ 答:看个人的实力和经验来回答了。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-你一般用什么去提交数据，为什么？"><span class="nav-number">9.18.</span> <span class="nav-text">18 你一般用什么去提交数据，为什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-在jquery中引入css有几种方式？"><span class="nav-number">9.19.</span> <span class="nav-text">19 在jquery中引入css有几种方式？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-你在jquery中使用过哪些插入节点的方法，它们的区别是什么？"><span class="nav-number">9.20.</span> <span class="nav-text">20 你在jquery中使用过哪些插入节点的方法，它们的区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-你使用过包裹节点的方法吗，包裹节点有方法有什么好处？"><span class="nav-number">9.21.</span> <span class="nav-text">21 你使用过包裹节点的方法吗，包裹节点有方法有什么好处？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#22-jquery中如何来获取或和设置属性？"><span class="nav-number">9.22.</span> <span class="nav-text">22 jquery中如何来获取或和设置属性？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23-如何来设置和获取HTML-和文本的值？"><span class="nav-number">9.23.</span> <span class="nav-text">23 如何来设置和获取HTML 和文本的值？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#24-你jquery中有哪些方法可以遍历节点？"><span class="nav-number">9.24.</span> <span class="nav-text">24 你jquery中有哪些方法可以遍历节点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#25-子元素选择器-和后代选择器元素有什么区别？"><span class="nav-number">9.25.</span> <span class="nav-text">25 子元素选择器 和后代选择器元素有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#26-在jquery中可以替换节点吗？"><span class="nav-number">9.26.</span> <span class="nav-text">26 在jquery中可以替换节点吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#27-你觉得beforeSend方法有什么用？"><span class="nav-number">9.27.</span> <span class="nav-text">27 你觉得beforeSend方法有什么用？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#28-siblings-方法-和-‘prev-div’-选择器是一样的嘛？"><span class="nav-number">9.28.</span> <span class="nav-text">28 siblings() 方法 和 $(‘prev~div’)选择器是一样的嘛？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#29-你在ajax中使用过JSON吗，你是如何用的？"><span class="nav-number">9.29.</span> <span class="nav-text">29 你在ajax中使用过JSON吗，你是如何用的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#30-有哪些查询节点的选择器？"><span class="nav-number">9.30.</span> <span class="nav-text">30 有哪些查询节点的选择器？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#31-nextAll-能-替代-‘prev-siblindgs’-选择器吗？"><span class="nav-number">9.31.</span> <span class="nav-text">31 nextAll() 能 替代$(‘prev~siblindgs’)选择器吗？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#32-jQuery中有几种方法可以来设置和获取样式"><span class="nav-number">9.32.</span> <span class="nav-text">32 jQuery中有几种方法可以来设置和获取样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#33-document-ready-方法和window-onload有什么区别？"><span class="nav-number">9.33.</span> <span class="nav-text">33 $(document).ready()方法和window.onload有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#34-jQuery是如何处理缓存的？"><span class="nav-number">9.34.</span> <span class="nav-text">34 jQuery是如何处理缓存的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#35-getScript-方法-和-getJson-方法有什么区别？"><span class="nav-number">9.35.</span> <span class="nav-text">35 $.getScript()方法 和 $.getJson() 方法有什么区别？</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">potato</span>
+</div>
+
+<div class="powered-by">
+  博主邮箱
+</div>
+
+<div class="theme-info">
+  1016196922@qq.com
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"inpotato"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("7vCKNJhw3gc8z0L3heAwJluA-gzGzoHsz", "zgHwmNyijEu6BzWAJDsyDXuG");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+<script type="text/javascript"
+color="0,0,0" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+</body>
+</html>
